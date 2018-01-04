@@ -73,12 +73,6 @@ $(document).ready(function($) {
         });
     }
 
-//  Fit Videos
-
-    if( $(".video").length ){
-        $(".video").fitVids();
-    }
-
 //  Form Validation
 
     $("#form-subscribe button").on("click", function(){
