@@ -4,6 +4,7 @@
 $(document).ready(function($) {
     "use strict";
 
+    // mobile navigation
     $(".nav-toggle").on('click',function (e) {
         $(".main-nav nav").toggleClass("show-nav");
     });
@@ -22,27 +23,6 @@ $(document).ready(function($) {
         });
     }
 
-//  Calendar
-
-    if( $(".calendar").length ){
-        $(".calendar").zabuto_calendar({
-            ajax: {
-                url: "assets/external/calendar.php",
-                modal: true
-            },
-            action: function () {
-                return checkDate(this.id);
-            },
-            language: "en",
-            show_previous: false,
-            today: true,
-            nav_icon: {
-                prev: '<i class="arrow_left"></i>',
-                next: '<i class="arrow_right"></i>'
-            }
-        });
-    }
-
 //  Smooth Scroll
 
     $('.main-nav a[href^="#"], a[href^="#"].scroll').on('click',function (e) {
@@ -56,48 +36,7 @@ $(document).ready(function($) {
         });
     });
 
-//  Radio buttons in modal
-
-    $(".times .btn").on("click", function() {
-        $(this).parent().find("input[type=radio]").attr("checked", false);
-        $(this).find("input[type=radio]").attr("checked", true);
-    });
-
-//  Owl Carousel
-
-    if( $(".owl-carousel").length ){
-        $(".owl-carousel").owlCarousel({
-            margin:30,
-            items: 4,
-            navText: []
-        });
-    }
-
 //  Form Validation
-
-    $("#form-subscribe button").on("click", function(){
-        $("#form-subscribe").validate({
-            submitHandler: function() {
-                $.post("assets/external/subscribe.php", $("#form-subscribe").serialize(),  function(response) {
-                    $('#form-subscribe .form-status').html(response);
-                    $('#form-subscribe button').attr('disabled','true');
-                });
-                return false;
-            }
-        });
-    });
-
-    $("#form-daily-motivation button").on("click", function(){
-        $("#form-daily-motivation").validate({
-            submitHandler: function() {
-                $.post("assets/external/daily_motivation.php", $("#form-daily-motivation").serialize(),  function(response) {
-                    $('#form-daily-motivation input').val(response);
-                    $('#form-daily-motivation button').attr('disabled','true');
-                });
-                return false;
-            }
-        });
-    });
 
     $("#form-contact button").on("click", function(){
         $("#form-contact").validate({
