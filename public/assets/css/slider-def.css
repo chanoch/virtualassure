@@ -1,0 +1,72 @@
+/* Images are 1920x1080*/
+/* they appear as 1291x445 */
+/* Reset */
+*{margin:0;padding:0;}
+#slider{
+  height:445px;
+  width:100%;position:relative;overflow:hidden;
+}
+.slides{
+  width:300%;
+  height:100%;
+  position:relative;-webkit-animation:image-slide 30s infinite;-moz-animation:image-slide 30s infinite;animation:image-slide 30s infinite;
+}
+.slider{
+  width:33.33%;
+  height:100%;
+  float:left;position:relative;z-index:1;overflow:hidden;
+}
+.slide img{width:100%;height:100%;}.image{width:100%;height:100%;}.image img{width:100%;height:100%;}
+
+.content{width:100%;height:100%;position:absolute;overflow:hidden;}
+
+.content-txt{
+  width:500px;
+  height:200px;
+  margin-left: 20%;
+  padding: 20px;
+  float:left;
+  position:relative;
+  top:200px;
+  background-color:  rgba(237, 234, 225, 0.8);
+  -webkit-animation:text-slide 10s infinite;-moz-animation:text-slide 10s infinite;animation:text-slide 10s infinite;
+}
+.content-txt h1{
+  text-align:left;
+  font-size: 24px;
+}
+.content-txt h4{
+  text-align:left;
+}
+
+@-webkit-keyframes image-slide{
+    0%,28%,100%{margin-left:0%;}
+    33.33%,61.33%{margin-left:-100%;}
+    66.66%,94.66%{margin-left:-200%;}
+}
+@-moz-keyframes image-slide{
+    0%,28%,100%{margin-left:0%;}
+    33.33%,61.33%{margin-left:-100%;}
+    66.66%,94.66%{margin-left:-200%;}
+}
+@keyframes image-slide{
+    0%,28%,100%{margin-left:0%;}
+    33.33%,61.33%{margin-left:-100%;}
+    66.66%,94.66%{margin-left:-200%;}
+}
+
+@-webkit-keyframes text-slide{
+    0%,80%,90%,100%{left:-800px;}
+    30%,40%,50%,60%,70%{left:0px;}
+    10%{left:20px;}
+  }
+@-moz-keyframes text-slide{
+    0%,80%,90%,100%{left:-800px;}
+    30%,40%,50%,60%,70%{left:0px;}
+    10%{left:20px;}
+}
+@keyframes text-slide{
+    0%,80%,90%,100%{left:-800px;}
+    30%,40%,50%,60%,70%{left:0px;}
+    10%{left:20px;}
+}

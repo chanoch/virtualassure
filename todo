@@ -1,0 +1,8 @@
+responsive images
+1x 1.5x 2x 3x
+160px 320px 640px 1280px
+ems = zoom level
+
+webp conversion
+image serving from nginx
+webp serving from nginx
