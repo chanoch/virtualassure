@@ -689,7 +689,7 @@ img {
   top: 0;
   z-index: -1;
   position: absolute;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .heading {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -1169,101 +1169,48 @@ textarea {
   right: 5px;
 }
 
+
+
 /* 7. Responsive */
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    font-size: 14px;
+@media (max-width: 1199px) {
+  .block           { padding: 40px 0px; }  
+  .feature-box     { margin-bottom: 40px; }
+  .subpage .page-wrapper h2:first-child {
+    margin-top: 40px;
   }
-
-  h1 {
-    font-size: 52px;
-  }
-
-  .feature-box i {
-    font-size: 46px;
-  }
-  .feature-box h3 {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  dl.big .promoted {
-    font-size: 28px;
-  }
-
-  .steps .step h3 {
-    min-height: 40px;
-  }
+  
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
-  body {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 48px;
-  }
-
-  .block {
-    padding: 40px 0px;
-  }
-
-  .feature-box {
-    margin-bottom: 30px;
-  }
-
-  .numbers .number figure {
-    font-size: 36px;
-  }
+  body             { font-size: 14px; }
+  h1               { font-size: 48px; }
+  h2               { font-size: 32px; }
+  dl.big           { font-size: 14px; }
+  dl.big .promoted { font-size: 24px; }
+  .numbers .number figure { font-size: 36px; }
+  .steps .step h3  { min-height: 40px; }
+  .steps .step figure .arrow { right: -60px; }
+  .btn.btn-big     { padding: 15px 20px; }
+  .box             { padding: 20px; }
 
   .bg img {
     max-width: inherit;
-    height: 100%;
+    height: 100%; 
   }
 
-  .steps .step h3 {
-    min-height: 40px;
-  }
-
-  .steps .step figure .arrow {
-    right: -60px;
-  }
-
-  .btn.btn-big {
-    padding: 15px 20px;
-  }
-
-  .box {
-    padding: 20px;
-  }
-
-  dl.big {
-    font-size: 14px;
-  }
-  dl.big .promoted {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
 }
 @media (max-width: 767px) {
-  .block {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
+  .block           { padding: 0px; }
+  .feature-box     { margin-bottom: 40px; }
+  h1 { font-size: 30px; }
 
   h2 {
     font-size: 24px;
+    margin-top: 20px; 
+  }
+
+  #features ul {
+    list-style: none;
   }
 
   .feature-box {
@@ -1303,6 +1250,15 @@ textarea {
     text-align: center;
     float: none;
     display: block;
+  }
+
+  #footer {
+    font-size: 12px;
+  }
+
+  #footer .left, #footer .right {
+    min-height: 4em; 
+    padding: 15px 0px;
   }
 
   .workshop-list h3 {
@@ -1377,26 +1333,22 @@ textarea {
   .icon-shortcut {
     display: none;
   }
-.icon_calendar {
-  background-color: 'red'
-}
+  .icon_calendar {
+    background-color: 'red'
+  }
+  #getintouchbutton {
+    padding-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 40em) { 
-
     .brand img {
-        width: 75%;
         height: 75%;
     }
     #footer {
         font-size: 12px;
     }
-    #footer .left {
-        min-height: 3em; 
-        padding: 10px 0px;
-    }
-
-    #footer .right {
+    #footer .left,   #footer .right {
         min-height: 3em; 
         padding: 10px 0px;
     }
