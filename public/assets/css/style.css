@@ -1382,4 +1382,10 @@ textarea {
         float: none;
         margin: 0 auto;
     }
+
+    dl.big dd, dl.big .promoted {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+      
 }
