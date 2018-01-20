@@ -1,10 +1,24 @@
-
 contact us DONE
+remove jquery DONE
+Fix phone number in contact.html DONE
+Update CV DONE
+Hamburger menu not working DONE
+
+
+The contact page. The text boxes look to have been squeezed in a bit. 
+Services page: green circle is over text
+Pricing page: swipe left of images shows a blank page
+About page: swipe left of images shows a blank page
+Services page: strike through custom quote section
+Feedback section
+
 about
-remove jquery
 disable email in new tab thing
 
+Services would look easier to read if they were lined up next to bullet points
+and lined up to the left. 
 
+The services page looks a lot better, we need to sit down and talk through what they mean and do we need to change it.
 
 _m = 600wx662h
 _t = 1284wx890h
