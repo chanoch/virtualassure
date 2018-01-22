@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./index"
+    "start": "node ./index",
+    "spa": "webpack-dev-server"
   },
   "dependencies": {
     "@sendgrid/mail": "^6.1.4",
@@ -15,6 +16,20 @@
     "express-error-handler": "^1.1.0",
     "helmet": "^3.9.0",
     "morgan": "~1.9.0",
+    "path": "^0.12.7",
     "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.3.1",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
   }
 }
