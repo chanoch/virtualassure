@@ -20,7 +20,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
     <!-- [if IE]> 
@@ -31,7 +31,7 @@
 </head>
 
 <body class="subpage">
-<div class="overlay"></div><a id="top"></a>
+<div class="overlay"></div>
 
 <div class="outer-wrapper">
 <div class="page-wrapper">
@@ -45,7 +45,7 @@
             <!--/.secondary-nav-->
             <div class="main-nav">
                 <div class="brand"><a href="index.html"><img src="assets/img/logo.png" alt=""></a></div><!--/.brand-->
-                <nav id="nav-toggle">
+                <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
@@ -53,7 +53,7 @@
                         <li class="active"><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About Me</a></li>
                     </ul>
-                    <div class="nav-toggle" onclick="toggleNavigation(event)"><i class="icon_menu"></i></div>
+                    <div class="nav-toggle"><i class="icon_menu"></i></div>
                 </nav>
                 <a href="contact.html" class="icon-shortcut"><i class="icon_calendar" title="Make an Appointment"></i></a><!--/.icon-->
             </div>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <div class="right">
-                        <span><a href="#top" onclick="backToTop(event)">Back to Top<i class="arrow_carrot-up_alt2"></i></a></span>
+                        <span><a href="#top" class="scroll">Back to Top<i class="arrow_carrot-up_alt2"></i></a></span>
                         <div class="bg-right"></div>
                     </div>
                 </div>
@@ -145,6 +145,9 @@
 
 </div>
 </div>
+<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
 <!--[if lte IE 9]>
