@@ -1208,6 +1208,11 @@ textarea {
 
 }
 @media (max-width: 767px) {
+  a.white {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 0px;
+  }
+
   .block           { padding: 20px; }
   h1               { font-size: 30px; }
 
@@ -1215,7 +1220,10 @@ textarea {
     font-size: 28px;
     margin-top: 20px; 
   }
-
+  h3 {
+    line-height: 1.5;
+    font-size: 16px;
+  }
   .steps .step {
       margin-top: 40px;
       padding-top: 20px;

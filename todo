@@ -1,3 +1,27 @@
+
+make contact emails work
+nginx image serving? 
+nginx proxy
+
+smooth scroll with accessibility
+https://css-tricks.com/smooth-scrolling-accessibility/
+
+Webpack enable website
+
+Feedback section
+
+about
+disable email in new tab thing
+
+reactify 
+
+_m = 600wx662h
+_t = 1284wx890h
+_d = 1920wx808h
+
+
+
+
 contact us DONE
 remove jquery DONE
 Fix phone number in contact.html DONE
@@ -13,28 +37,4 @@ The services page looks a lot better, we need to sit down and talk through what 
 Remove types of services in services page on mobile view DONE
 Services would look easier to read if they were lined up next to bullet points
 and lined up to the left. DONE
-
-make contact emails work
-nginx image serving? 
-nginx proxy
-
-smooth scroll with accessibility
-https://css-tricks.com/smooth-scrolling-accessibility/
-
-Webpack enable website
-
-Services page: strike through custom quote section 
-Feedback section
-
-about
-disable email in new tab thing
-
-reactify 
-
-_m = 600wx662h
-_t = 1284wx890h
-_d = 1920wx808h
-
-
-
-
+Services page: strike through custom quote section DONE
