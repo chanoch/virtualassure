@@ -1209,7 +1209,7 @@ textarea {
 }
 @media (max-width: 767px) {
   .block           { padding: 20px; }
-  h1 { font-size: 30px; }
+  h1               { font-size: 30px; }
 
   h2 {
     font-size: 28px;
@@ -1224,11 +1224,14 @@ textarea {
   .steps :first-child {
       margin-top: 0px;
   }
-
   #features ul {
-    list-style: none;
+      width: fit-content;
+      text-align: left;
   }
 
+  .feature-list {
+	display:inline-block;
+  }
   .feature-box {
     text-align: center;
   }
@@ -1331,30 +1334,19 @@ textarea {
     display: block;
     float: none;
   }
-  .navigation .main-nav nav ul li.active a:after {
-    display: none;
-  }
+  .navigation .main-nav nav ul li.active a:after { display: none; }
   .navigation .main-nav nav ul li a {
     display: block;
     color: #fff;
     padding: 5px 10px;
   }
-  .navigation .main-nav nav ul li a:hover {
-    color: #fff;
-  }
+  .navigation .main-nav nav ul li a:hover { color: #fff; }
+  a:hover { color: #fff; }
 
-  a:hover {
-    color: #fff;
-  }
-  .icon-shortcut {
-    display: none;
-  }
-  .icon_calendar {
-    background-color: 'red'
-  }
-  #getintouchbutton {
-    padding-bottom: 40px;
-  }
+  .icon-shortcut { display: none; }
+  #servicetypes { display: none; }
+
+  #getintouchbutton { padding-bottom: 40px; }
 }
 
 @media only screen and (max-width: 40em) { 
@@ -1386,5 +1378,7 @@ textarea {
         font-size: 12px;
         margin-left: 0px;
     }
-      
+    aside.note.center {
+        padding-bottom: 3em;
+    } 
 }
