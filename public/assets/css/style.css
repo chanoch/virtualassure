@@ -1200,13 +1200,23 @@ textarea {
 
 }
 @media (max-width: 767px) {
-  .block           { padding: 0px; }
+  a.white {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 0px;
+  }
+  
+    .block           { padding: 0px; }
   .feature-box     { margin-bottom: 40px; }
   h1 { font-size: 30px; }
 
   h2 {
     font-size: 24px;
     margin-top: 20px; 
+  }
+
+  h3 {
+    line-height: 1.5;
+    font-size: 16px;
   }
 
   #features ul {
