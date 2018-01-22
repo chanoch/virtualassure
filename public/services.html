@@ -47,7 +47,7 @@ icon_search_alt,
 -->
 
 <body class="subpage">
-<div class="overlay"></div>
+<div class="overlay"></div><a id="top"></a>
 
 <div class="outer-wrapper">
 <div class="page-wrapper">
@@ -61,7 +61,7 @@ icon_search_alt,
             <!--/.secondary-nav-->
             <div class="main-nav">
                 <div class="brand"><a href="index.html"><img src="assets/img/logo.png" alt=""></a></div><!--/.brand-->
-                <nav>
+                <nav id="nav-toggle">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="services.html">Services</a></li>
@@ -69,7 +69,7 @@ icon_search_alt,
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="about.html">About Me</a></li>
                     </ul>
-                    <div class="nav-toggle"><i class="icon_menu"></i></div>
+                    <div class="nav-toggle" onclick="toggleNavigation(event)"><i class="icon_menu"></i></div>
                 </nav>
                 <a href="contact.html" class="icon-shortcut"><i class="icon_calendar" title="Make an Appointment"></i></a><!--/.icon-->
             </div>
@@ -87,7 +87,7 @@ icon_search_alt,
     
     <div class="page-content">
 
-            <div class="container">
+            <div class="container" id="servicetypes">
                     <h2 class="center">Flexible Commitment</h2>
                     <div class="row">
                         <div class="col-md-4 col-sm-4">
@@ -134,6 +134,7 @@ icon_search_alt,
                     <div class="feature-box">
                         <i class="icon_box-checked"></i>
                         <h3>Project Governance</h3>
+                        <div class="feature-list">
                         <p>
                             <ul>
                                 <li>Implementing Governance Processes</li>
@@ -143,6 +144,7 @@ icon_search_alt,
                             </ul>
                         </p>
                         <a href="contact.html">Arrange a call <i class="arrow_right"></i></a>
+                        </div>
                     </div>
                     <!--/ .feature-box-->
                 </div>
@@ -168,11 +170,6 @@ icon_search_alt,
             <!--/ .row-->
         </div>
         <!--/ .container-->
-        <div class="bg bg-color-neutral opacity-50"></div><!--/ .bg-->
-    </div>
-    <!--/ .block-->
-
-    <div class="block" id="features">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -213,12 +210,6 @@ icon_search_alt,
                 <!--/ .row-->
             </div>
             <!--/ .container-->
-            <div class="bg bg-color-neutral opacity-50"></div><!--/ .bg-->
-        </div>
-        <!--/ .block-->
-    
-        <div class="page-content">
-        <div class="block" id="features">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -257,90 +248,19 @@ icon_search_alt,
                 <!--/ .col-md-3-->
             </div>
             <!--/ .row-->
+            <div class="row">
+                <div class="center">
+                        <a href="contact.html" class="btn btn-default btn-big">Get in touch</a>
+                </div>
+            </div>
         </div>
         <!--/ .container-->
         <div class="bg bg-color-neutral opacity-50"></div><!--/ .bg-->
     </div>
     <!--/ .block-->
     
-    <div class="block" id="five-steps-to-success">
-            <div class="container">
-                <h2 class="center">Five steps to engagement</h2>
-                <div class="steps">
-                    <div class="step width-20">
-                        <figure>
-                            <aside>1.</aside>
-                            <div class="bar height-20">
-                                <div class="arrow"></div>
-                            </div>
-                        </figure>
-                        <h3>Contact Me</h3>
-                        <hr>
-                        <p>We can discuss your requirements to check we are aligned.</p>
-                    </div>
-                    <!--/ .step-->
-                    <div class="step width-20">
-                        <figure>
-                            <aside>2.</aside>
-                            <div class="bar height-40">
-                                <div class="arrow"></div>
-                            </div>
-                        </figure>
-                        <h3>Make an Appointment</h3>
-                        <hr>
-                        <p>I will visit to discuss your requirements in more detail.</p>
-                    </div>
-                    <!--/ .step-->
-                    <div class="step width-20">
-                        <figure>
-                            <aside>3.</aside>
-                            <div class="bar height-60">
-                                <div class="arrow"></div>
-                            </div>
-                        </figure>
-                        <h3>I will analyze the work</h3>
-                        <hr>
-                        <p>I will provide you with a summary of our discussion together with a time estimate and recommended package.</p>
-                    </div>
-                    <!--/ .step-->
-                    <div class="step width-20">
-                        <figure>
-                            <aside>4.</aside>
-                            <div class="bar height-80">
-                                <div class="arrow"></div>
-                            </div>
-                        </figure>
-                        <h3>Sign Up</h3>
-                        <hr>
-                        <p>- Access to systems<br>- Agree frequency of catchups<br>- Your preferred working style<br>- Agree start date.</p>
-                    </div>
-                    <!--/ .step-->
-                    <div class="step width-20">
-                        <figure>
-                            <aside>5.</aside>
-                            <div class="bar height-100">
-                                <div class="arrow"></div>
-                            </div>
-                        </figure>
-                        <h3>Start of Engagement</h3>
-                        <hr>
-                        <p>Regular review to ensure we are working well together.</p>
-                    </div>
-                    <!--/ .step-->
-                </div>
-                <!--/ .steps-->
-			</div>
-		</div>				
-
-        <div class="block" id="getintouchbutton">
-            <div class="container">
-                <div class="center">
-                        <a href="contact.html" class="btn btn-default btn-big">Get in touch</a>
-                </div>
-            </div>
-        </div>
-		
-    <footer id="footer">
+    
+<footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-8">
@@ -351,7 +271,7 @@ icon_search_alt,
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <div class="right">
-                        <span><a href="#top" class="scroll">Back to Top<i class="arrow_carrot-up_alt2"></i></a></span>
+                        <span><a href="#top" onclick="backToTop(event)">Back to Top<i class="arrow_carrot-up_alt2"></i></a></span>
                         <div class="bg-right"></div>
                     </div>
                 </div>
@@ -362,11 +282,6 @@ icon_search_alt,
 
 </div>
 </div>
-
-<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
 
 <script type="text/javascript" src="assets/js/custom.js"></script>
 

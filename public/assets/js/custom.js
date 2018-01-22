@@ -1,24 +1,19 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// jQuery
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-$(document).ready(function($) {
-    "use strict";
+function toggleNavigation(e) {
+    e.preventDefault();
+    var el = document.querySelector('#nav-toggle');
+    console.log('Found el' + (el.className.length===0));
+    var classNames = el.className;
+    if(classNames.length===0) {
+        el.className = 'show-nav';
+    } else {
+        el.className = '';
+    }
+}
 
-    // mobile navigation
-    $(".nav-toggle").on('click',function (e) {
-        $(".main-nav nav").toggleClass("show-nav");
+function backToTop(e) {
+    e.preventDefault();
+    document.querySelector('#top').scrollIntoView({
+        behavior: 'smooth',
     });
-
-//  Smooth Scroll
-
-    $('.main-nav a[href^="#"], a[href^="#"].scroll').on('click',function (e) {
-        e.preventDefault();
-        var target = this.hash,
-            $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 2000, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-});
+    return false;
+}

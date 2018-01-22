@@ -358,7 +358,9 @@ img {
 }
 .bg img {
   max-width: inherit;
-  height: 100%;}
+  height: 100%;
+}
+
 .box {
   -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
@@ -599,6 +601,7 @@ img {
   background-color: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.4);
 }
+.feature-box     { margin-bottom: 40px; }
 .feature-box > i {
   color: #37b048;
   font-size: 56px;
@@ -618,7 +621,8 @@ img {
 }
 .feature-circle {
   text-align: center;
-  width: 100%;}
+  width: 100%;
+}
 .feature-circle .image {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -666,7 +670,8 @@ img {
   z-index: -1;
   position: absolute;
 }
-#footer .right {width: 100%;
+#footer .right {
+  width: 100%;
   padding: 40px 0;
   position: relative;
   margin: 0 -15px;
@@ -717,8 +722,7 @@ img {
   color: #37b048;
   margin-right: 5px;
 }
-.modal-dialog {width: 700px;
-}
+.modal-dialog {width: 700px;}
 .modal-content {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -859,7 +863,8 @@ img {
 .sidebar ul li a {
   color: black;
 }
-.steps {width: 100%;
+.steps {
+  width: 100%;
   display: table;
   margin-bottom: 30px;
 }
@@ -873,10 +878,12 @@ img {
 .steps .step:last-child figure .arrow {
   display: none;
 }
-.steps .step figure {height: 100px;
+.steps .step figure {
+  height: 100px;
   vertical-align: bottom;
   display: table-cell;
-  width: 100%;}
+  width: 100%;
+}
 .steps .step figure aside {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
@@ -947,7 +954,9 @@ body, html { height: 100%; }
 */
 .times .btn-group {
   display: table;
-  width: 100%;}
+  width: 100%;
+}
+
 .workshop-list {
   margin-bottom: 60px;
 }
@@ -1172,9 +1181,8 @@ textarea {
 
 
 /* 7. Responsive */
-@media (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .block           { padding: 40px 0px; }  
-  .feature-box     { margin-bottom: 40px; }
   .subpage .page-wrapper h2:first-child {
     margin-top: 40px;
   }
@@ -1184,7 +1192,7 @@ textarea {
 @media (min-width: 768px) and (max-width: 991px) {
   body             { font-size: 14px; }
   h1               { font-size: 48px; }
-  h2               { font-size: 32px; }
+  h2               { font-size: 32px; margin-bottom: 40px;}
   dl.big           { font-size: 14px; }
   dl.big .promoted { font-size: 24px; }
   .numbers .number figure { font-size: 36px; }
@@ -1200,29 +1208,30 @@ textarea {
 
 }
 @media (max-width: 767px) {
-  a.white {
-    border-bottom: 3px solid #fff;
-    padding-bottom: 0px;
-  }
-  
-    .block           { padding: 0px; }
-  .feature-box     { margin-bottom: 40px; }
-  h1 { font-size: 30px; }
+  .block           { padding: 20px; }
+  h1               { font-size: 30px; }
 
   h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-top: 20px; 
   }
 
-  h3 {
-    line-height: 1.5;
-    font-size: 16px;
+  .steps .step {
+      margin-top: 40px;
+      padding-top: 20px;
   }
 
+  .steps :first-child {
+      margin-top: 0px;
+  }
   #features ul {
-    list-style: none;
+      width: fit-content;
+      text-align: left;
   }
 
+  .feature-list {
+	display:inline-block;
+  }
   .feature-box {
     text-align: center;
   }
@@ -1325,30 +1334,19 @@ textarea {
     display: block;
     float: none;
   }
-  .navigation .main-nav nav ul li.active a:after {
-    display: none;
-  }
+  .navigation .main-nav nav ul li.active a:after { display: none; }
   .navigation .main-nav nav ul li a {
     display: block;
     color: #fff;
     padding: 5px 10px;
   }
-  .navigation .main-nav nav ul li a:hover {
-    color: #fff;
-  }
+  .navigation .main-nav nav ul li a:hover { color: #fff; }
+  a:hover { color: #fff; }
 
-  a:hover {
-    color: #fff;
-  }
-  .icon-shortcut {
-    display: none;
-  }
-  .icon_calendar {
-    background-color: 'red'
-  }
-  #getintouchbutton {
-    padding-bottom: 40px;
-  }
+  .icon-shortcut { display: none; }
+  #servicetypes { display: none; }
+
+  #getintouchbutton { padding-bottom: 40px; }
 }
 
 @media only screen and (max-width: 40em) { 
@@ -1365,7 +1363,6 @@ textarea {
 
     .equal-height-row{
         display: block;
-        width: 100%;
     }
 
     .equal-height{
@@ -1376,4 +1373,12 @@ textarea {
         float: none;
         margin: 0 auto;
     }
+
+    dl.big dd, dl.big .promoted {
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    aside.note.center {
+        padding-bottom: 3em;
+    } 
 }

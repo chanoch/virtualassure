@@ -1,8 +1,40 @@
-responsive images
-1x 1.5x 2x 3x
-160px 320px 640px 1280px
-ems = zoom level
+contact us DONE
+remove jquery DONE
+Fix phone number in contact.html DONE
+Update CV DONE
+Hamburger menu not working DONE
+Pricing page: swipe left of images shows a blank page DONE
+About page: swipe left of images shows a blank page DONE
+The contact page. The text boxes look to have been squeezed in a bit. DONE
+Remove Services header in Pricing DONE
+Explanations added to pricing with note links DONE
+Services page: green circle is over text (in top choice) DONE
+The services page looks a lot better, we need to sit down and talk through what they mean and do we need to change it. DONE
+Remove types of services in services page on mobile view DONE
+Services would look easier to read if they were lined up next to bullet points
+and lined up to the left. DONE
 
-webp conversion
-image serving from nginx
-webp serving from nginx
+make contact emails work
+nginx image serving? 
+nginx proxy
+
+smooth scroll with accessibility
+https://css-tricks.com/smooth-scrolling-accessibility/
+
+Webpack enable website
+
+Services page: strike through custom quote section 
+Feedback section
+
+about
+disable email in new tab thing
+
+reactify 
+
+_m = 600wx662h
+_t = 1284wx890h
+_d = 1920wx808h
+
+
+
+
