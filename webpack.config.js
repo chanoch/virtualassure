@@ -8,15 +8,16 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: './react/index.jsx',
-  output: {
-    path: path.join(__dirname, 'dist/public'),
-    filename: 'index_bundle.js'
-  },
-  module: {
-    loaders: [
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /(node_modules)/ },
-    ]
-  },
-  plugins: [HtmlWebpackPluginConfig]
+    watch: true,
+    entry: './react/index.jsx',
+    output: {
+        path: path.join(__dirname, 'dist/public'),
+        filename: 'index_bundle.js'
+    },
+    module: {
+        loaders: [
+           { test: /\.jsx$/, loader: 'babel-loader', exclude: /(node_modules)/ },
+        ]
+    },
+    plugins: [HtmlWebpackPluginConfig]
 }
