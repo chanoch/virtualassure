@@ -1,5 +1,3 @@
-reactify 
-
 
 make contact emails work
 nginx image serving? 
@@ -8,7 +6,7 @@ nginx proxy
 smooth scroll with accessibility
 https://css-tricks.com/smooth-scrolling-accessibility/
 
-Webpack enable website
+Webpack enable website (copy static resources)
 
 Feedback section
 
@@ -38,3 +36,4 @@ Services would look easier to read if they were lined up next to bullet points
 and lined up to the left. DONE
 Services page: strike through custom quote section DONE
 about DONE
+reactify DONE
