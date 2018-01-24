@@ -18327,7 +18327,7 @@ var Testimonials = function (_React$Component) {
                                     { className: "image" },
                                     _react2.default.createElement(
                                         "a",
-                                        { href: "https://www.linkedin.com/in/markansonia/", title: "Mark Ansonia's Linked In Page" },
+                                        { target: "_blank", href: "https://www.linkedin.com/in/markansonia/", title: "Mark Ansonia's Linked In Page (Opens in new window)" },
                                         _react2.default.createElement("img", { src: "assets/img/markansonia.jpg", alt: "Mark Ansonia - an old colleague" })
                                     )
                                 ),
@@ -18349,7 +18349,7 @@ var Testimonials = function (_React$Component) {
                                         null,
                                         _react2.default.createElement(
                                             "a",
-                                            { href: "https://www.linkedin.com/in/markansonia/" },
+                                            { target: "_blank", href: "https://www.linkedin.com/in/markansonia/", title: "Mark's Linked In Page (Opens in new window)" },
                                             "Mark Ansonia"
                                         )
                                     )
@@ -18367,7 +18367,7 @@ var Testimonials = function (_React$Component) {
                                     { className: "image" },
                                     _react2.default.createElement(
                                         "a",
-                                        { href: "https://www.linkedin.com/in/nicholas-kirk-1773738/", title: "Nick Kirk's Linked In Page" },
+                                        { target: "_blank", href: "https://www.linkedin.com/in/nicholas-kirk-1773738/", title: "Nick Kirk's Linked In Page (Opens in new window)" },
                                         _react2.default.createElement("img", { src: "assets/img/nickkirk.jpg", alt: "Nick Kirk - an old colleague" })
                                     )
                                 ),
@@ -18389,7 +18389,7 @@ var Testimonials = function (_React$Component) {
                                         null,
                                         _react2.default.createElement(
                                             "a",
-                                            { href: "https://www.linkedin.com/in/nicholas-kirk-1773738/" },
+                                            { target: "_blank", href: "https://www.linkedin.com/in/nicholas-kirk-1773738/", title: "Nick's Linked In Pages (Opens in new window)" },
                                             "Nick Kirk"
                                         )
                                     )
