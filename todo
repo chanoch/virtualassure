@@ -1,5 +1,4 @@
 
-make contact emails work
 nginx image serving? 
 nginx proxy
 
@@ -7,8 +6,6 @@ smooth scroll with accessibility
 https://css-tricks.com/smooth-scrolling-accessibility/
 
 Webpack enable website (copy static resources)
-
-Feedback section
 
 disable email in new tab thing
 
@@ -37,3 +34,5 @@ and lined up to the left. DONE
 Services page: strike through custom quote section DONE
 about DONE
 reactify DONE
+Feedback section DONE
+make contact emails work DONE
