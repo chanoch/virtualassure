@@ -4,3 +4,5 @@ node_modules/
 dist/public/report.html
 
 pm2.ecosystem.config.*
+
+package-lock.json
