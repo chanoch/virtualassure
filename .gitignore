@@ -1,4 +1,6 @@
 node_modules/
-dest/
+
 *.log
 dist/public/report.html
+
+pm2.ecosystem.config.js
