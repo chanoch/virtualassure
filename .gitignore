@@ -3,4 +3,4 @@ node_modules/
 *.log
 dist/public/report.html
 
-pm2.ecosystem.config.js
+pm2.ecosystem.config.*
