@@ -22,13 +22,14 @@
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
-    "path": "^0.12.7",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^2.30.1",
+    "path": "^0.12.7",
     "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.2",
     "webpack-dev-server": "^2.11.1"
   }
 }

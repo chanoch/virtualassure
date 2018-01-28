@@ -17,12 +17,12 @@ router.post('/contact', recaptcha.middleware.verify, function(req, res, next) {
     }
 
     var contact_email = req.body.email,
-                 from = contact_email ? contact_email : 'jenita@virtualassure.co.uk';
+                 from = contact_email ? contact_email : 'chanoch@clearbrook.it';
 
     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
         from,
-        to: 'jenita@virtualassure.co.uk',
+        to: 'chanoch@clearbrook.it',
         subject: `Contact request (recaptcha: ${recaptcha_success})`,
         text: `${req.body.message} phone: ${req.body.phone}`,
         html: `
