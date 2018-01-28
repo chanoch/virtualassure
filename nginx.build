@@ -1,0 +1,19 @@
+cd /tmp #so we can clean-up easily
+wget https://nginx.org/download/nginx-1.13.8.tar.gz
+tar zxvf nginx-1.10.0.tar.gz && rm -f nginx-1.13.8.tar.gz
+cd nginx-1.13.8
+sudo yum install pcre-devel openssl-devel #required libs, not installed by default
+./configure \
+  --prefix=/etc/nginx \
+  --conf-path=/etc/nginx/nginx.conf \
+  --pid-path=/var/run/nginx.pid \
+  --lock-path=/var/run/nginx.lock \
+  --with-http_ssl_module \
+  --with-http_v2_module \
+  --user=nginx \
+  --group=nginx
+make
+sudo make install
+sudo groupadd nginx
+sudo useradd -M -g nginx nginx
+cd .. && rm -rf nginx-1.13.8
