@@ -322,7 +322,7 @@ var AjaxRecaptchaForm = function (_React$Component) {
                 return Object.assign(previous, fieldSetter());
             }, {});
             Object.assign(fields, { 'g-recaptcha-response': this.recaptcha.getResponse() });
-            _axios2.default.post(window.location.protocol + '://' + window.location.hostname + ':' + window.location.port + '/contact', fields).then(function (response) {
+            _axios2.default.post('/contact', fields).then(function (response) {
                 _this3.setState({ phase: 'submitted' });
             }).catch(function (error) {
                 _this3.setState({

@@ -82,7 +82,7 @@ export default class AjaxRecaptchaForm extends React.Component {
             return Object.assign(previous, fieldSetter());
         }, {});
         Object.assign(fields, {'g-recaptcha-response': this.recaptcha.getResponse()});
-        axios.post(`${window.location.protocol}://${window.location.hostname}:${window.location.port}/contact`, fields)
+        axios.post(`/contact`, fields)
             .then((response) => {
                 this.setState({phase: 'submitted'});
             }).catch((error) => {
