@@ -1,15 +1,28 @@
-bundle react once as shared chunks
+fix missing component
+implement react routing 
+add Layout
+add data layer
+move styles
+
+accessibility test
+security test
+ - content security policy with helmet-csp
 
 
-nginx image serving? 
-nginx proxy
+Update services to work for mobile
+Add service detail
+facebook engagement
+add logging of contact requests.
+Add echo of message? 
+Add require email or phone?
+
+disable email in new tab thing
+
+
 
 smooth scroll with accessibility
 https://css-tricks.com/smooth-scrolling-accessibility/
-
-Webpack enable website (copy static resources)
-
-disable email in new tab thing
+DEFER
 
 _m = 600wx662h
 _t = 1284wx890h
@@ -38,3 +51,11 @@ about DONE
 reactify DONE
 Feedback section DONE
 make contact emails work DONE
+bundle react once as shared chunks DONE
+nginx proxy DONE
+nginx image serving? implemented as cache DONE
+tidy up server/web split DONE
+Set up github push with api key DONE
+reorganise webpack structure DONE
+build for production DONE
+Webpack enable website (copy static resources) DONE

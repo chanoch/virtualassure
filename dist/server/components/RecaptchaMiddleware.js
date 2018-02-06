@@ -11,7 +11,7 @@ module.exports = class RecaptchaMiddleware{
         this._secret_key = secret_key
         this._options = options || {checkremoteip:false}
         if (!this._site_key) throw new Error('site_key is required')
-        if (!this._secret_key) throw new Error('secret_key is required')
+        if (!this._secret_key) throw new Error('recaptcha_secret is required')
     }
     get middleware() {
         return {
@@ -31,7 +31,6 @@ module.exports = class RecaptchaMiddleware{
         if(req.body && req.body['g-recaptcha-response']) response = req.body['g-recaptcha-response'];
     
         let query_string = 'secret='+this._secret_key+'&response='+response;
-        console.log(query_string);
         if (this._options.checkremoteip){
         let remote_ip = req.headers && req.headers['x-forwarded-for'] ? req.headers['x-forwarded-for'] : req.connection.remoteAddress;
         if (remote_ip) query_string += '&remoteip=' + remote_ip

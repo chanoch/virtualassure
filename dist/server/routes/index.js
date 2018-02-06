@@ -5,11 +5,6 @@ const sgMail = require('@sendgrid/mail');
 var Recaptcha = require('../components/RecaptchaMiddleware');
 var recaptcha = new Recaptcha('6LczmEIUAAAAALhJlGFrEw3DWGXVKESz-jCr45de', process.env.recaptcha_secret);
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send('index');
-});
-
 router.post('/contact', recaptcha.middleware.verify, function(req, res, next) {
     var recaptcha_success = true;
     if(req.recaptcha.error) {
