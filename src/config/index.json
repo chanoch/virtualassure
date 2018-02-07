@@ -17,5 +17,10 @@
         "link": "/services.html",
         "alt": "Link to services page",
         "linkText": "Services"
+    },{
+        "key": "about",
+        "link": "/about.html",
+        "alt": "Link to About Me page",
+        "linkText": "About Me"
     }]
 }

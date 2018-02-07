@@ -1,5 +1,5 @@
+Pricing page
 
-services page
 
 Error on missing config in page
 propTypes
@@ -80,3 +80,5 @@ Webpack enable website (copy static resources) DONE
 equal height component DONE
 active navigation DONE
 navigation move out to data DONE
+services page DONE
+About me page DONE
