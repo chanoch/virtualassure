@@ -59,7 +59,7 @@ module.exports = {
     watch: true,
     entry: {
         vendor: ['react', 'react-dom', 'axios'],
-        index: './src/react/index.jsx',
+        index: './src/js/index.jsx',
     },
     output: {
         path: path.join(__dirname, 'dist/public'),

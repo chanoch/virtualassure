@@ -1,0 +1,29 @@
+{
+    "title": "Five steps to engagement",
+    "steps": [{
+        "key": "1",
+        "title": "Contact Me",
+        "text": "We can discuss your requirements to check we are aligned.",
+        "classes": "bar height-20"
+    },{
+        "key": "2",
+        "title": "Make an appointment",
+        "text": "I will visit to discuss your requirements in more detail.",
+        "classes": "bar height-40"
+    },{
+        "key": "3",
+        "title": "I will analyse the work",
+        "text": "I will provide you with a summary of our discussion together with a time estimate and recommended package.",
+        "classes": "bar height-60"
+    }, {
+        "key": "4",
+        "title": "Sign Up",
+        "text": "<p>- Access to systems<br />- Agree frequency of catchups<br />- Your preferred working style<br />- Agree start date.</p>",
+        "classes": "bar height-80"
+    },{
+        "key": "5",
+        "title": "Start of Engagement",
+        "text": "Regular reviews ensure we are working well together.",
+        "classes": "bar height-100"
+    }]
+}

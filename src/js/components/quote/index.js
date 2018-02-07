@@ -4,7 +4,7 @@ import React from 'react';
  * @argument quote - the quote to show
  * @argument author - the person making the quote
  */
-export default class Testimonials extends React.PureComponent {
+export default class Quote extends React.PureComponent {
     
     render() {
         const {quote, author} = this.props;

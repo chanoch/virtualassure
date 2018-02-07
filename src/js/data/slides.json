@@ -1,0 +1,29 @@
+{"slides": [{
+        "key": 1,
+        "title": "Hi, I’m Jenita Wiggers",
+        "text": "Unlock the power of your virtual personal assistant!",
+        "link": "services.html",
+        "linkText": "Tell Me How",
+        "imgMobile": "assets/img/slide1_desk_m.jpg",
+        "imgTablet": "assets/img/slide1_desk_t.jpg",
+        "imgDesktop": "assets/img/slide1_desk.jpg"
+    },{
+        "key": 2,
+        "title": "Free up your time",
+        "text": "Let me take on day-to-day tasks",
+        "link": "services.html",
+        "linkText": "Tell Me How",
+        "imgMobile": "assets/img/slide2_time_m.jpg",
+        "imgTablet": "assets/img/slide2_time_t.jpg",
+        "imgDesktop": "assets/img/slide2_time.jpg"            
+    },{
+        "key": 3,
+        "title": "Reliable, meticulous, efficient",
+        "text": "Giving you time to focus on the tasks that make you successful",
+        "link": "services.html",
+        "linkText": "Tell Me How",
+        "imgMobile": "assets/img/slide3_gear_m.jpg",
+        "imgTablet": "assets/img/slide3_gear_t.jpg",
+        "imgDesktop": "assets/img/slide3_gear.jpg"            
+    }]
+}

@@ -1,0 +1,15 @@
+{
+    "phone": "07843 080 738",
+    "email": "jenita@virtualassure.co.uk",
+    "navigation": [{
+        "key": "home",
+        "link": "/",
+        "alt": "Link to home page",
+        "linkText": "Home"
+    },{
+        "key": "contact",
+        "link": "/contact.html",
+        "alt": "Link to contact us page",
+        "linkText": "Contact"
+    }]
+}

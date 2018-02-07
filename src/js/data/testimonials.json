@@ -1,0 +1,41 @@
+{
+    "title": "Success Stories",
+    "testimonials": [
+    {
+        "key": "mark",
+        "link": "https://www.linkedin.com/in/markansonia/",
+        "linkTitle": "Mark Ansonia's Linked In Page (Opens in new window)",
+        "img": "assets/img/markansonia.jpg",
+        "alt": "Photo of Mark Ansonia",
+        "quote": [{
+            "id": "mark.1",
+            "text": "I worked with Jenita for a number of years. Jenita consistently managed to bring together a large team of people to deliver operationally critical information resulting in clear reporting against KPIs."
+        },{
+            "id": "mark.2",
+            "text": "Jenita was the person to go to to resolve problems. If you need someone you can trust to \"just get on with it\" and see it through, then I can highly recommend Jen. In fact, I use the documents she produced in my role in Switzerland!"
+        }],
+        "footer": {
+            "link": "https://www.linkedin.com/in/markansonia/",
+            "linkTitle":"Mark's Linked In Page (Opens in new window)",
+            "linkText": "Mark Ansonia"
+        }
+    },{
+        "key": "nick",
+        "link": "https://www.linkedin.com/in/nicholas-kirk-1773738/",
+        "linkTitle": "Nick Kirk's Linked In Page (Opens in new window)",
+        "img": "assets/img/nickkirk.jpg",
+        "alt": "Photo of Nick Kirk",
+        "quote": [{
+                "id": "nick.1",
+                "text": "Having worked with Jenita for several years in the supply chain and purchasing function as a supply chain planner, I always found Jenita to be concise and logical in her approach to her work and a real asset to the department."
+            }, {
+                "id": "nick.2",
+                "text": "Jenita's creative and innovative approach delivered huge improvements to several product ranges and promotions resulting in greatly improved SLAs with suppliers and internal customers alike."
+        }],
+        "footer": {
+            "link": "https://www.linkedin.com/in/nicholas-kirk-1773738/",
+            "linkTitle": "Nick's Linked In Pages (Opens in new window)",
+            "linkText": "Nick Kirk"
+        }
+    }
+]}  
