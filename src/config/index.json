@@ -1,3 +1,21 @@
 {
-    "sitekey": "6LczmEIUAAAAALhJlGFrEw3DWGXVKESz-jCr45de"
+    "phone": "07843 080 738",
+    "email": "jenita@virtualassure.co.uk",
+    "sitekey": "6LczmEIUAAAAALhJlGFrEw3DWGXVKESz-jCr45de",
+    "navigation": [{
+        "key": "home",
+        "link": "/",
+        "alt": "Link to home page",
+        "linkText": "Home"
+    },{
+        "key": "contact",
+        "link": "/contact.html",
+        "alt": "Link to contact us page",
+        "linkText": "Contact"
+    },{
+        "key": "services",
+        "link": "/services.html",
+        "alt": "Link to services page",
+        "linkText": "Services"
+    }]
 }

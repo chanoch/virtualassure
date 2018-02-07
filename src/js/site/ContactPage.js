@@ -17,10 +17,10 @@ export default class ContactPage extends React.PureComponent {
     }
 
     render() {
-        const {sitekey} = this.props;
+        const {sitekey, config} = this.props;
 
         return (
-            <Layout active={content.key}>
+            <Layout active={content.active} config={config}>
                 <Heading title={content.title} />
                 <Declaration    title={content.declaration.title}
                                 text={content.declaration.text} />
@@ -41,9 +41,9 @@ export default class ContactPage extends React.PureComponent {
                             <h3>Contact Details</h3>
                             <dl className="big">
                                 <dt className="promoted"><i className="icon_phone"></i></dt>
-                                <dd className="promoted"><a href="tel:07843 080 738">07843 080 738</a></dd>
+                                <dd className="promoted"><a href={`tel:${config.phone}`}>{config.phone}</a></dd>
                                 <dt><i className="icon_mail"></i></dt>
-                                <dd><a href="mailto:jenita@virtualassure.co.uk">jenita@virtualassure.co.uk</a></dd>
+                                <dd><a href={`mailto:${config.email}`}>{config.email}</a></dd>
                             </dl>
                             <div className="bg bg-color-default-darker"></div>
                         </div>

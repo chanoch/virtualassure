@@ -24,8 +24,8 @@ export default class Navigation extends React.PureComponent {
             <header className="navigation" id="top">
                 <div className="container">
                     <div className="secondary-nav">
-                        <span><a href="mailto:jenita@virtualassure.co.uk" target="_blank"><i className="icon_mail"></i>jenita@virtualassure.co.uk</a></span>
-                        <span><a href="tel:+447843080738"><i className="icon_phone"></i>07843 080 738</a></span>
+                        <span><a href={`mailto:${config.email}`} target="_blank"><i className="icon_mail"></i>{config.email}</a></span>
+                        <span><a href={`tel:${config.phone}`}><i className="icon_phone"></i>{config.phone}</a></span>
                     </div>
 
                     <div className="main-nav">
@@ -37,7 +37,6 @@ export default class Navigation extends React.PureComponent {
                                         <a href={menuitem.link} alt={menuitem.alt}>{menuitem.linkText}</a>
                                     </li>)
                                 })}
-                                <li><a href="services.html">Services</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
                                 {/* contact */}
                                 <li><a href="about.html">About Me</a></li>

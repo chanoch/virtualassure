@@ -3,15 +3,13 @@ import React from 'react';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
 
-import config from '../data/general.json';
-
 export default class Layout extends React.Component {
     constructor(props) {
         super(props);
     } 
 
     render() {
-        const { active } =  this.props;
+        const { active, config } =  this.props;
         return (
             <div className="outer-wrapper">
                 <div className="page-wrapper">

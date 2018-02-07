@@ -619,6 +619,9 @@ img {
   margin-top: 25px;
   margin-bottom: 20px;
 }
+.feature-circle:before {
+    display: table;
+}
 .feature-circle {
   text-align: center;
   width: 100%;

@@ -31,13 +31,13 @@ app.use(function(req, res, next) {
       next();
 });
 
-app.use(express.static(path.join(__dirname, '../public')));
-
 app.use(index);
 
-app.use('*', function(req, res) {
+app.use('*.html', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.htm'));
 });
+
+app.use(express.static(path.join(__dirname, '../public')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -48,8 +48,8 @@ app.use(function(req, res, next) {
 
 var errorHandler = ErrorHandler({
   static: {
-    '500': '../dist/public/error.html',
-    '404': '../dist/public/error.html',
+    '500': './dist/public/error.htm',
+    '404': './dist/public/error.htm',
   }
 }) 
 

@@ -1,8 +1,12 @@
+
+services page
+
+Error on missing config in page
 propTypes
 error boundaries
 calculate env and default config
 subpage versus main styles
-navigation move out to data
+fix email link in chrome?
 README.md
 react-event-preventdefault?
 global data for layout
@@ -10,6 +14,7 @@ data for components
 fix reload on navigation? 
 add css to components
 error boundaries
+fix express error handler pages
 
 fix missing form components
 implement react routing 
@@ -74,3 +79,4 @@ build for production DONE
 Webpack enable website (copy static resources) DONE
 equal height component DONE
 active navigation DONE
+navigation move out to data DONE

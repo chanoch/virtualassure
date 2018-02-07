@@ -17,8 +17,9 @@ export default class HomePage extends React.PureComponent {
     }
 
     render() {
+        const {config} = this.props;
         return (
-            <Layout active="home">
+            <Layout active="home" config={config}>
                 <Slideshow slides={slides} />
                 <Triangle />
                 <Testimonials title={refs.title} testimonials={refs.testimonials}/>
