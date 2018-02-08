@@ -8387,7 +8387,7 @@ var AboutMePage = function (_Component) {
                         { 'class': 'container' },
                         _react2.default.createElement(
                             'h2',
-                            { 'class': 'center' },
+                            { 'class': 'title-center' },
                             'A little bit about me'
                         ),
                         _react2.default.createElement(
@@ -8403,7 +8403,7 @@ var AboutMePage = function (_Component) {
                                 { 'class': 'col-md-8 col-sm-8' },
                                 _react2.default.createElement(
                                     'h3',
-                                    { 'class': 'no-bottom-margin' },
+                                    { 'class': 'half-bottom-margin' },
                                     _react2.default.createElement(
                                         'strong',
                                         null,

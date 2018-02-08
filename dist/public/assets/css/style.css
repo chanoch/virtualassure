@@ -372,6 +372,10 @@ img {
   text-align: center;
   margin: auto;
 }
+.title-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
 .circle {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -379,14 +383,8 @@ img {
   border: 2px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
-.no-margin {
-  margin: 0;
-}
-.no-bottom-margin {
-  margin-bottom: 0;
-}
 .half-bottom-margin {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .row.no-gutters {
   margin-right: 0;
