@@ -18,6 +18,11 @@
         "alt": "Link to services page",
         "linkText": "Services"
     },{
+        "key": "pricing",
+        "link": "/pricing.html",
+        "alt": "Link to Pricing page",
+        "linkText": "Pricing"
+    },{
         "key": "about",
         "link": "/about.html",
         "alt": "Link to About Me page",

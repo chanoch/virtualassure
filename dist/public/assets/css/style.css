@@ -370,6 +370,7 @@ img {
 }
 .center {
   text-align: center;
+  margin: auto;
 }
 .circle {
   -moz-border-radius: 50%;
@@ -499,6 +500,7 @@ img {
   padding: 5px 10px;
   color: black;
   font-weight: bold;
+  margin: 5px;
 }
 .calendar div.zabuto_calendar .table tr.calendar-month-header th {
   background-color: transparent;

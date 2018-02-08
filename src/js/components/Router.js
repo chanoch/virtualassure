@@ -21,7 +21,7 @@ async function resolve(routes, context) {
         const result = await route.action({ ...context });
         if (result) return result;
     }
-    const error = new Error('Not found');
+    const error = new Error('Route not found');
     error.status = 404;
     throw error;
 }

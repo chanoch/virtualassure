@@ -1,7 +1,7 @@
 /* Images are 1920x1080*/
 /* they appear as 1291x445 */
 /* Reset */
-*{margin:0;padding:0;}
+#slider *{margin:0;padding:0;}
 #slider{
   height:445px;
   width:100%;position:relative;overflow:hidden;

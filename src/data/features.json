@@ -1,7 +1,9 @@
-[
+{
+    "title": "Example Packages",
+    "features": [
     {
         "key": "set_hours",
-        "title": "Set hours",
+        "title": "10 hours",
         "tags": [
             {"key": 1, "text": "End of year"},
             {"key": 2, "text": "Holiday cover"},
@@ -28,8 +30,7 @@
         "title": "2 hours/week",
         "tags": [
             {"key": 1, "text": "Weekly reports"},
-            {"key": 2, "text": "Invoicing and expenses"},
-            {"key": 3, "text": "Scanning and e-filing"}
+            {"key": 2, "text": "Invoicing and expenses"}
         ],
         "summary": "Regular engagement to clear your paperwork.",
         "description": [
@@ -50,16 +51,14 @@
         "key": "eight_hours",
         "title": "8 hours/week",
         "tags": [
-            {"key": 1, "text": "End of year"},
-            {"key": 2, "text": "Holiday cover"},
-            {"key": 3, "text": "Interim cover"}
+            {"key": 1, "text": "Remote PA"},
+            {"key": 2, "text": "Part time support"}
         ],
-        "summary": "One-off engagement of set hours.",
+        "summary": "Admin service",
         "description": [
             {"key": 1, "text":  ""},
             {"key": 2, "text": "You might also consider this option as a taster to remote provision."},
             {"key": 3, "text": "Ad-hoc tasks in addition to regular activities. Shared todo list on request to co-ordinate priorities. * todos can be emailed as each is completed."}
-
         ],
         "keyPoints": [
             {"key": 1,"text": "Fixed costs"},
@@ -70,6 +69,4 @@
         ],
         "price": "£800/month +VAT"
     }
-]
-
-                
+]}

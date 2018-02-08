@@ -1,10 +1,16 @@
-Pricing page
+About Me - fix spacing in headings
+Home page - fix spacing in slideshow
+delete services.html
+check dist for cleanup
+change h2 header to a section type with row
+semver and ci/cd
 
+calculate env and default config
+Consolidate creation of routes, navigation, importing of pages
 
 Error on missing config in page
 propTypes
 error boundaries
-calculate env and default config
 subpage versus main styles
 fix email link in chrome?
 README.md
@@ -14,17 +20,17 @@ data for components
 fix reload on navigation? 
 add css to components
 error boundaries
-fix express error handler pages
 
-fix missing form components
-implement react routing 
-add Layout
-add data layer
 move styles
 
 accessibility test
 security test
  - content security policy with helmet-csp
+
+BLOG POSTS
+React organisation - using index versus import Blah/Blah
+Webpack configuration
+Express config - returning index.htm
 
 
 Update services to work for mobile
@@ -82,3 +88,10 @@ active navigation DONE
 navigation move out to data DONE
 services page DONE
 About me page DONE
+Fix 404 on no URL specified: https://virtualassist.co.uk DONE
+fix missing form components DONE
+implement react routing  DONE
+add Layout DONE
+add data layer DONE
+fix express error handler pages DONE
+Pricing page DONE

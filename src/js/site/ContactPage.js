@@ -9,7 +9,7 @@ import Layout from './Layout';
 
 import EqualHeightRow from '../components/equalheight';
 
-import content from '../data/contact.json';
+import content from '../../data/contact.json';
 
 export default class ContactPage extends React.PureComponent {
     constructor(props) {
@@ -23,7 +23,12 @@ export default class ContactPage extends React.PureComponent {
             <Layout active={content.active} config={config}>
                 <Heading title={content.title} />
                 <Declaration    title={content.declaration.title}
-                                text={content.declaration.text} />
+                                text={content.declaration.text} 
+                                bg="true"/>
+
+                <div className="block">
+                    <div className="bg"></div>
+                </div>
                 <EqualHeightRow>
                     <div className="col-md-6 col-sm-12 col-12">
                         <div className="box text-color-white equal-height">
@@ -33,7 +38,7 @@ export default class ContactPage extends React.PureComponent {
                                 sitekey={sitekey}>
                                 <ContactForm />
                             </AjaxRecaptchaForm>
-                                        <div className="bg bg-color-default"></div>
+                            <div className="bg bg-color-default"></div>
                         </div>
                     </div>
                     <div className="col-md-6 col-sm-12 col-12">
@@ -49,6 +54,7 @@ export default class ContactPage extends React.PureComponent {
                         </div>
                     </div>
                 </EqualHeightRow>
+                
                 <div className="block">
                     <div className="bg"></div>
                 </div>

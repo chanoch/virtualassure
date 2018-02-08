@@ -37,9 +37,6 @@ export default class Navigation extends React.PureComponent {
                                         <a href={menuitem.link} alt={menuitem.alt}>{menuitem.linkText}</a>
                                     </li>)
                                 })}
-                                <li><a href="pricing.html">Pricing</a></li>
-                                {/* contact */}
-                                <li><a href="about.html">About Me</a></li>
                             </ul>
                             <div className="nav-toggle" onClick={this.toggleNavigation}><i className="icon_menu"></i></div>
                         </nav>
@@ -47,7 +44,6 @@ export default class Navigation extends React.PureComponent {
                     </div>
 
                 </div>
-
             </header>
            
         )

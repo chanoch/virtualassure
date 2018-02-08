@@ -5,7 +5,10 @@ export default class ServiceTypes extends Component {
     render() {
         return (
             <div className="container" id="servicetypes">
-                <h2 className="center">Flexible Commitment</h2>
+                <div className="row">
+                    <h2 className="center">Flexible Commitment</h2>
+                </div>
+
                 <div className="row">
                     <Service 
                         img="assets/img/parttime.jpg" 

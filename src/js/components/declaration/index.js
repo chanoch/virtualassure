@@ -14,14 +14,18 @@ export default class Declaration extends React.PureComponent {
     }
 
     render() {
-        const {title, text} = this.props;
+        const {title, text, bg} = this.props;
         return (
             <div className="block">            
                 <div className="container center">
                     <h2>{title}</h2>
                     <p className="lead">{text}</p>
                 </div>
-                <div className="bg bg-color-neutral opacity-40"></div>
+                {bg && 
+                    <div className="bg bg-color-neutral opacity-40"></div>
+                }{!bg && 
+                    <div className="bg"></div>
+                }
             </div>
         )
     }
