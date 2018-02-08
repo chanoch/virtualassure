@@ -1,0 +1,75 @@
+[
+    {
+        "key": "set_hours",
+        "title": "Set hours",
+        "tags": [
+            {"key": 1, "text": "End of year"},
+            {"key": 2, "text": "Holiday cover"},
+            {"key": 3, "text": "Interim cover"}
+        ],
+        "summary": "One-off engagement of set hours.",
+        "description": [
+            {"key": 1, "text":  "Often used for catching up with paperwork, for annual tasks such as end of year accounts or to provide cover for staff, whether during holiday, sickness, or while waiting for a new staff member to be recruited."},
+            {"key": 2, "text": "You might also consider this option as a taster to remote provision."},
+            {"key": 3, "text": "Particularly applicable to consistent tasks such as expenses, invoicing, and handling email queries."}
+
+        ],
+        "keyPoints": [
+            {"key": 1,"text": "Fixed costs"},
+            {"key": 2,"text": "Fixed number of hours"},
+            {"key": 3,"text": "Phone, Email and Whatsapp for comms"},
+            {"key": 4,"text": "One month duration usually"},
+            {"key": 5,"text": "Additional hours subject to availability"}
+        ],
+        "price": "£250+VAT"
+    },    {
+        "key": "weekly_2_hours",
+        "promoted": true,
+        "title": "2 hours/week",
+        "tags": [
+            {"key": 1, "text": "Weekly reports"},
+            {"key": 2, "text": "Invoicing and expenses"},
+            {"key": 3, "text": "Scanning and e-filing"}
+        ],
+        "summary": "Regular engagement to clear your paperwork.",
+        "description": [
+            {"key": 1, "text":  "This can be useful to clear your schedule of routine administration such as ordering stationary, checking the diary, and general admin."},
+            {"key": 2, "text":  "You can use this time to ensure that invoices are sent, chased, scanned and receipted or to ensure expenses are filed."},
+            {"key": 3, "text":  "I can also work through your diary and email to highlight actions deal with schedule conflicts."}
+
+        ],
+        "keyPoints": [
+            {"key": 1,"text": "Deal with work overflow"},
+            {"key": 2,"text": "Guaranteed availability"},
+            {"key": 3,"text": "Phone, Email and Whatsapp for comms"},
+            {"key": 4,"text": "Renewed monthly"},
+            {"key": 5,"text": "1 week notice for rewewal"}
+        ],
+        "price": "£220/month +VAT"
+    },    {
+        "key": "eight_hours",
+        "title": "8 hours/week",
+        "tags": [
+            {"key": 1, "text": "End of year"},
+            {"key": 2, "text": "Holiday cover"},
+            {"key": 3, "text": "Interim cover"}
+        ],
+        "summary": "One-off engagement of set hours.",
+        "description": [
+            {"key": 1, "text":  ""},
+            {"key": 2, "text": "You might also consider this option as a taster to remote provision."},
+            {"key": 3, "text": "Ad-hoc tasks in addition to regular activities. Shared todo list on request to co-ordinate priorities. * todos can be emailed as each is completed."}
+
+        ],
+        "keyPoints": [
+            {"key": 1,"text": "Fixed costs"},
+            {"key": 2,"text": "Fixed number of hours"},
+            {"key": 3,"text": "Phone, Email and Whatsapp for comms"},
+            {"key": 4,"text": "One month duration usually"},
+            {"key": 5,"text": "Additional hours subject to availability"}
+        ],
+        "price": "£800/month +VAT"
+    }
+]
+
+                

@@ -1,0 +1,79 @@
+{
+    "title": "Services",
+    "link": "contact.html",
+    "linkText": "Get in touch",
+    "features": [
+    {
+        "key": "governance",
+        "icon":"icon_box-checked",
+        "title": "Project Governance",
+        "details": [
+            {"key":1, "text":"Implementing Governance Processes"},
+            {"key":2, "text":"Defining and documenting targets"},
+            {"key":3, "text":"Tracking Projects to Time and Budget"},
+            {"key":4, "text":"Risk and Issue matrix and scoring"}
+        ],
+        "link": "contact.html",
+        "linkText": "Arrange a call"
+    },{
+        "key": "budgets",
+        "icon":"icon_calculator_alt", 
+        "title":"Budget Tracking",
+        "details":[
+            {"key":1,"text":"Project cost reconciliation"},
+            {"key":2, "text":"Spend forecasting"},
+            {"key":3, "text":"Tracking Capital Budgets"},
+            {"key":4, "text":"Revenue reporting"}
+        ],
+        "link":"contact.html",
+        "linkText":"Arrange a call"
+    },{
+        "key": "financeadmin",
+        "icon":"icon_currency_alt",
+        "title":"Finance Administration",
+        "details":[
+            {"key":1,"text":"Invoicing and Receipting"},
+            {"key":2, "text":"Raising Purchase Orders"},
+            {"key":3, "text":"Supplier Set Up"},
+            {"key":4, "text":"Expenses"}
+        ],
+        "link":"contact.html",
+        "linkText":"Arrange a call"
+    },{
+        "key": "pa",
+        "icon":"icon_profile",
+        "title":"Personal Assistant",
+            "details":[
+            {"key":1,"text":"Dictation"},
+            {"key":2, "text":"Minutes"},
+            {"key":3, "text":"Preparing Board Reports"},
+            {"key":4, "text":"Diary Management"}
+        ],
+        "link":"contact.html",
+        "linkText":"Arrange a call"
+    },{
+        "key": "general",
+        "icon":"icon_paperclip", 
+        "title":"General Administration",
+        "details":[
+            {"key":1,"text":"Filing"},
+            {"key":2, "text":"Order supplies"},
+            {"key":3, "text":"Contact Management - email and phone"},
+            {"key":4, "text":"Supplier Contact"}
+        ],
+        "link":"contact.html",
+        "linkText":"Arrange a call"
+    },{
+        "key": "household",
+        "icon":"icon_house_alt",
+        "title":"Household Paperwork",
+        "details":[
+            {"key":1,"text":"Bills and household finance"},
+            {"key":2, "text":"Insurance renewal"},
+            {"key":3, "text":"Appointment booking"},
+            {"key":4, "text":"Nursery and School research"}
+        ],
+        "link":"contact.html",
+        "linkText":"Arrange a call"
+    }
+]}
