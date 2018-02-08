@@ -7,9 +7,9 @@ import Triangle from '../components/triangle';
 import Testimonials from '../components/testimonials'
 import StepsToSuccess from '../components/steps';
 
-import {slides} from '../data/slides.json';
-import refs from '../data/testimonials.json'; 
-import steps2success from '../data/stepstosuccess.json';
+import {slides} from '../../data/slides.json';
+import refs from '../../data/testimonials.json'; 
+import steps2success from '../../data/stepstosuccess.json';
 
 export default class HomePage extends React.PureComponent {
     constructor(props) {

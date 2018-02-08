@@ -11,7 +11,7 @@ var compression = require('compression');
 
 var ErrorHandler = require('express-error-handler');
 
-var index = require('./routes/index');
+var index = require('./routes/index'); // contact form
 
 var app = express();
 // app.use(compression);
@@ -23,6 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
+// redirect port 80 to TLS
 app.use(function(req, res, next) {
   if(req.get('X-Forwarded-Proto') === 'http') {
       res.redirect('https://' + req.get('Host') + req.url);
@@ -31,13 +32,19 @@ app.use(function(req, res, next) {
       next();
 });
 
-app.use(index);
+app.use(index); // mount contact me form post end point
 
+// all .html files should end up being service spa
 app.use('*.html', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.htm'));
 });
 
 app.use(express.static(path.join(__dirname, '../public')));
+
+// Return home page if not url specified
+app.use('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '../public/index.htm'));
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
