@@ -13,13 +13,13 @@ export default class AboutMePage extends Component {
 
     <div class="block">
         <div class="container">
-            <h2 class="center">A little bit about me</h2>
+            <h2 class="title-center">A little bit about me</h2>
             <div class="row">
                 <div class="col-md-4 col-sm-4">
                     <img src="assets/img/jenitawiggers.jpg" alt="Jenita Wiggers"/>
                 </div>
                 <div class="col-md-8 col-sm-8">
-                    <h3 class="no-bottom-margin"><strong>Jenita Wiggers</strong></h3>
+                    <h3 class="half-bottom-margin"><strong>Jenita Wiggers</strong></h3>
                     <h5>Virtual Assistant</h5>
                     <br/>
                     <p>
