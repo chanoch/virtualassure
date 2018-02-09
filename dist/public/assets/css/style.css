@@ -4,16 +4,6 @@ Version:	1.0
 Last change:	19.11.2015
 Assigned to:	ThemeStarz
 
-[Table of contents]
-
-1. Header
-2. Equal height styling
-3. Elements Styling
-4. Universal classes
-5. Classes
-6. Forms
-7. Responsive
-
 [Color codes]
 
 Default: #37b048;
@@ -27,140 +17,6 @@ Headers:		'Lato', sans-serif;
 
 -------------------------------------------------------------------*/
 /* 1. Header */
-.navigation {
-  position: relative;
-  z-index: 99;
-}
-.navigation a {
-  color: black;
-}
-.navigation .secondary-nav {
-  font-size: 10px;
-  letter-spacing: 1pt;
-  text-align: right;
-  font-weight: bold;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.navigation .secondary-nav span {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-  -moz-transition: 0.3s;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  margin-left: 15px;
-}
-.navigation .secondary-nav span:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-.navigation .secondary-nav span i {
-  margin-right: 5px;
-}
-.navigation .nav-toggle {
-  display: none;
-  font-size: 29px;
-  position: absolute;
-  top: -10px;
-  bottom: 0px;
-  right: 0px;
-  height: 30px;
-  margin: auto;
-  z-index: 999;
-}
-.navigation .main-nav {
-  display: table;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
-.navigation .main-nav .brand, .navigation .main-nav nav {
-  display: table-cell;
-  vertical-align: middle;
-}
-.navigation .main-nav ul {
-  list-style: none;
-  float: right;
-}
-.navigation .main-nav ul li {
-  float: left;
-}
-.navigation .main-nav ul li.active a {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-.navigation .main-nav ul li.active a:after {
-  visibility: visible;
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-.navigation .main-nav ul li a {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  margin: 5px 15px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 13px;
-  position: relative;
-}
-.navigation .main-nav ul li a:last-child {
-  margin-right: 0;
-}
-.navigation .main-nav ul li a:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-  color: black;
-}
-.navigation .main-nav ul li a:after {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  visibility: hidden;
-  content: "";
-  height: 3px;
-  background-color: #37b048;
-  position: absolute;
-  width: 100%;
-  bottom: -10px;
-  left: 0;
-}
-.navigation .main-nav .icon-shortcut {
-  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  bottom: -52px;
-  background-color: #37b048;
-  height: 65px;
-  width: 65px;
-  position: absolute;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  line-height: 70px;
-}
-.navigation .main-nav .icon-shortcut:hover {
-  background-color: #319d40;
-}
-.navigation .main-nav .icon-shortcut:hover i {
-  -moz-transform: rotateZ(360deg) scale(0.8);
-  -ms-transform: rotateZ(360deg) scale(0.8);
-  -webkit-transform: rotateZ(360deg) scale(0.8);
-  transform: rotateZ(360deg) scale(0.8);
-}
-.navigation .main-nav .icon-shortcut i {
-  -moz-transition: 0.5s cubic-bezier(0.93, 0.01, 0.37, 1);
-  -webkit-transition: 0.5s cubic-bezier(0.93, 0.01, 0.37, 1);
-  transition: 0.5s cubic-bezier(0.93, 0.01, 0.37, 1);
-  display: inline-block;
-  font-size: 24px;
-}
-.subpage .navigation {
-  background-color: rgba(237, 234, 225, 0.3);
-}
-
 /* 2. Equal height styling */
 .equal-height-row {
     display: flex;
@@ -498,107 +354,6 @@ img {
   font-weight: bold;
   margin: 5px;
 }
-.calendar div.zabuto_calendar .table tr.calendar-month-header th {
-  background-color: transparent;
-  border: none;
-}
-.calendar div.zabuto_calendar .table tr.calendar-month-header th span {
-  text-transform: uppercase;
-  font-size: 18px;
-}
-.calendar div.zabuto_calendar .table tr.calendar-dow-header th {
-  background-color: transparent;
-  border-top: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 15px;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-.calendar div.zabuto_calendar .table tr th, .calendar div.zabuto_calendar .table tr td {
-  background-color: transparent;
-}
-.calendar div.zabuto_calendar .table th, .calendar div.zabuto_calendar .table td {
-  padding: 0;
-}
-.calendar .badge-today {
-  background-color: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-}
-.calendar .calendar-month-navigation > span i {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #37b048;
-  color: #fff;
-  padding: 10px;
-}
-.calendar.big {
-  font-size: 14px;
-}
-.calendar.big div.zabuto_calendar .table tr.calendar-month-header th span {
-  color: rgba(0, 0, 0, 0.3);
-}
-.calendar.big div.zabuto_calendar .table tr.calendar-dow-header th {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
-}
-.calendar.big div.zabuto_calendar .table tr td div.day {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-.calendar.big div.zabuto_calendar .table tr th, .calendar.big div.zabuto_calendar .table tr td {
-  background-color: transparent;
-}
-.calendar.big div.zabuto_calendar .table tr:last-child {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-.calendar.big .badge-today {
-  background-color: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  color: black;
-  font-size: 14px;
-}
-.calendar.big td {
-  border: none;
-}
-.calendar.small div.zabuto_calendar .table tr.calendar-dow-header th {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
-.calendar.small div.zabuto_calendar .table tr.calendar-month-header th span {
-  color: #fff;
-}
-.calendar.small div.zabuto_calendar .table tr:last-child {
-  border-bottom: none;
-}
-.calendar.small div.zabuto_calendar .table tr td div.day {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.calendar.small .badge-today {
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-}
-.calendar.small .not-available {
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.2);
-}
-.calendar.small td {
-  border: none;
-}
-.calendar.small .calendar-month-navigation > span i {
-  background-color: transparent;
-  padding: 5px 6px;
-  border: 2px solid #fff;
-}
-.calendar .dow-clickable.event-styled {
-  pointer-events: none;
-}
-.calendar .not-available {
-  pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.4);
-}
 .feature {
     background: rgba(237, 234, 225, 0.3);
     padding: 40px;
@@ -714,41 +469,6 @@ img {
   font-weight: normal;
   margin-bottom: 20px;
 }
-.modal.workshop-detail .modal-header h3 {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
-  opacity: 0.6;
-  font-size: 36px;
-  font-weight: lighter;
-  margin: 0px 0;
-}
-.modal.workshop-detail .modal-header h4 {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: bold;
-}
-.modal.workshop-detail .modal-header .time i {
-  color: #37b048;
-  margin-right: 5px;
-}
-.modal-dialog {width: 700px;}
-.modal-content {
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-}
-.modal-content .modal-header, .modal-content .modal-body, .modal-content .modal-footer {
-  padding: 40px;
-  border: none;
-}
-.modal-content .modal-header {
-  padding-bottom: 0;
-}
-.modal-content .modal-body {
-  padding-top: 20px;
-}
-.modal-content .btn-group {
-  padding-bottom: 30px;
-}
 .numbers {
   margin: 20px 0;
 }
@@ -768,22 +488,10 @@ img {
   font-size: 14px;
   color: rgba(0, 0, 0, 0.4);
 }
-.pagination li.active a, .pagination li.active a:hover {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #37b048;
-}
-.pagination li a, .pagination li a:hover {
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  color: black;
-  border: none;
-}
 .page-wrapper {
   overflow: hidden;
 }
+/* pricing is a namespacing class name*/
 .pricing h3 {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
@@ -925,42 +633,10 @@ img {
 .steps .step p {
   font-size: 14px;
 }
-.story {
-  background: rgba(237, 234, 225, 0.3);
-  position: relative;
-  padding: 40px;
-  margin-bottom: 30px;
-}
-.story blockquote {
-  margin-left: 100px;
-}
-.story p {
-  font-size: 16px;
-}
-.story .image {
-  -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  height: 155px;
-  width: 155px;
-  overflow: hidden;
-  position: absolute;
-  left: -20px;
-  top: 30px;
-}
 .subpage .page-wrapper h2:first-child {
   margin-top: 0;
 }
 
-/*
-.page-wrapper { display: table; width: 100%; height: 100%; }
-body, html { height: 100%; }
-#footer { display: table-row; height: 1px; }
-.outer-wrapper { height: 100%; overflow-x: hidden; }
-*/
 .times .btn-group {
   display: table;
   width: 100%;
@@ -1212,15 +888,15 @@ textarea {
     height: 100%; 
   }
   .pricing .price-box .price {
-      font-size: 18px;
+      font-size: 22px;
   }
 }
-@media (max-width: 767px) {
-    .pricing .price-box .price {
-        font-size: 18px;
-    }
 
-    a.white {
+@media only screen and (max-width: 767px) {
+    .pricing .price-box .price {
+        font-size: 20px;
+    }  
+  a.white {
     border-bottom: 3px solid #fff;
     padding-bottom: 0px;
   }
@@ -1267,20 +943,6 @@ textarea {
     display: none;
   }
 
-  .story {
-    padding: 20px;
-    text-align: center;
-  }
-  .story .image {
-    position: relative;
-    left: inherit;
-    top: inherit;
-    display: inline-block;
-  }
-  .story blockquote {
-    margin-left: 0;
-  }
-
   dl.big .promoted {
     font-size: 18px;
   }
@@ -1304,63 +966,11 @@ textarea {
     margin-top: 20px;
   }
 
-  .modal-dialog {
-    width: 100%;
-  }
-
   .blog-post .meta .tags {
     float: none;
     margin-top: 20px;
   }
 
-  .navigation .nav-toggle {
-    display: block;
-  }
-  .navigation .main-nav nav {
-    cursor: pointer;
-  }
-  .navigation .main-nav nav.show-nav ul {
-    pointer-events: auto;
-    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-    opacity: 1;
-    visibility: visible;
-  }
-  .navigation .main-nav nav ul {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -moz-transition: 0.3s;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    pointer-events: none;
-    background-color: #383838;
-    float: none;
-    display: inline-block;
-    position: absolute;
-    right: 5px;
-    margin-top: 30px;
-    text-align: right;
-    padding-left: 0;
-  }
-  .navigation .main-nav nav ul:after {
-    border-style: solid;
-    border-width: 0 0 10px 10px;
-    border-color: transparent transparent #383838 transparent;
-    content: "";
-    position: absolute;
-    top: -10px;
-    right: 0;
-  }
-  .navigation .main-nav nav ul li {
-    display: block;
-    float: none;
-  }
-  .navigation .main-nav nav ul li.active a:after { display: none; }
-  .navigation .main-nav nav ul li a {
-    display: block;
-    color: #fff;
-    padding: 5px 10px;
-  }
-  .navigation .main-nav nav ul li a:hover { color: #fff; }
   a:hover { color: #fff; }
 
   .icon-shortcut { display: none; }
@@ -1374,9 +984,6 @@ textarea {
 }
 
 @media only screen and (max-width: 40em) { 
-  .pricing .price-box .price {
-      font-size: 18px;
-  }
     .brand img {
         height: 75%;
     }

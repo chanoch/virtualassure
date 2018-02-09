@@ -5333,146 +5333,39 @@ module.exports = {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _Navigation = __webpack_require__(247);
 
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+var _Navigation2 = _interopRequireDefault(_Navigation);
 
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(4);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(5);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
+__webpack_require__(240);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Navigation = function (_React$PureComponent) {
-    (0, _inherits3.default)(Navigation, _React$PureComponent);
+/**
+ * Site menu component
+ * 
+ * Pass a prop called "active" with a value equal to the item key to highlight the current
+ * page as the active one in the menu. For example to highlight the Home link as active on
+ * the home page, pass <Navigation active="home" config={config} />  
+ * 
+ * This component depends on a config object which contains the following property:
+ * 
+ * {
+ *      "navigation": [{
+            "key": "home",
+            "link": "/",
+            "alt": "Link to home page",
+            "linkText": "Home"
+        },{
+            // etc, remaining menu items
+        }]
 
-    function Navigation(props) {
-        (0, _classCallCheck3.default)(this, Navigation);
-
-        var _this = (0, _possibleConstructorReturn3.default)(this, (Navigation.__proto__ || (0, _getPrototypeOf2.default)(Navigation)).call(this, props));
-
-        _this.toggleNavigation = _this.toggleNavigation.bind(_this);
-        return _this;
-    }
-
-    (0, _createClass3.default)(Navigation, [{
-        key: 'toggleNavigation',
-        value: function toggleNavigation(e) {
-            e.preventDefault();
-            var el = document.querySelector('#nav-toggle');
-            var classNames = el.className;
-            if (classNames.length === 0) {
-                el.className = 'show-nav';
-            } else {
-                el.className = '';
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                active = _props.active,
-                config = _props.config;
-
-            return _react2.default.createElement(
-                'header',
-                { className: 'navigation', id: 'top' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'secondary-nav' },
-                        _react2.default.createElement(
-                            'span',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: 'mailto:' + config.email, target: '_blank' },
-                                _react2.default.createElement('i', { className: 'icon_mail' }),
-                                config.email
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { href: 'tel:' + config.phone },
-                                _react2.default.createElement('i', { className: 'icon_phone' }),
-                                config.phone
-                            )
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'main-nav' },
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'brand' },
-                            _react2.default.createElement(
-                                'a',
-                                { href: 'index.html' },
-                                _react2.default.createElement('img', { src: 'assets/img/logo.png', alt: '' })
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'nav',
-                            { id: 'nav-toggle' },
-                            _react2.default.createElement(
-                                'ul',
-                                null,
-                                config.navigation.map(function (menuitem) {
-                                    return _react2.default.createElement(
-                                        'li',
-                                        { key: menuitem.key, className: active === menuitem.key ? "active" : "" },
-                                        _react2.default.createElement(
-                                            'a',
-                                            { href: menuitem.link, alt: menuitem.alt },
-                                            menuitem.linkText
-                                        )
-                                    );
-                                })
-                            ),
-                            _react2.default.createElement(
-                                'div',
-                                { className: 'nav-toggle', onClick: this.toggleNavigation },
-                                _react2.default.createElement('i', { className: 'icon_menu' })
-                            )
-                        ),
-                        _react2.default.createElement(
-                            'a',
-                            { href: 'contact.html', className: 'icon-shortcut' },
-                            _react2.default.createElement('i', { className: 'icon_calendar', title: 'Make an Appointment' })
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-    return Navigation;
-}(_react2.default.PureComponent);
-
-exports.default = Navigation;
+ * }
+ */
+exports.default = _Navigation2.default;
 
 /***/ }),
 /* 191 */
@@ -5784,92 +5677,21 @@ exports.default = Slide;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _Testimonials = __webpack_require__(246);
 
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+var _Testimonials2 = _interopRequireDefault(_Testimonials);
 
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(4);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(5);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Testimonial = __webpack_require__(195);
-
-var _Testimonial2 = _interopRequireDefault(_Testimonial);
+__webpack_require__(248);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Testimonials = function (_React$PureComponent) {
-    (0, _inherits3.default)(Testimonials, _React$PureComponent);
-
-    function Testimonials(props) {
-        (0, _classCallCheck3.default)(this, Testimonials);
-
-        var _this = (0, _possibleConstructorReturn3.default)(this, (Testimonials.__proto__ || (0, _getPrototypeOf2.default)(Testimonials)).call(this, props));
-
-        _this.renderTestimonial = _this.renderTestimonial.bind(_this);
-        return _this;
-    }
-
-    (0, _createClass3.default)(Testimonials, [{
-        key: 'renderTestimonial',
-        value: function renderTestimonial(testimonial) {
-            return _react2.default.createElement(_Testimonial2.default, { key: testimonial.key, testimonial: testimonial });
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            var _this2 = this;
-
-            var _props = this.props,
-                title = _props.title,
-                testimonials = _props.testimonials;
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'block', id: 'successful-stories' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'h2',
-                        null,
-                        title
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'row' },
-                        testimonials.map(function (testimonial) {
-                            return _this2.renderTestimonial(testimonial);
-                        })
-                    )
-                ),
-                _react2.default.createElement('div', { className: 'bg' })
-            );
-        }
-    }]);
-    return Testimonials;
-}(_react2.default.PureComponent);
-
-exports.default = Testimonials;
+/**
+ * Quotes/References about Jen's successes in previous roles.
+ */
+exports.default = _Testimonials2.default;
 
 /***/ }),
 /* 195 */
@@ -8821,98 +8643,23 @@ exports.default = List;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
-var _getPrototypeOf = __webpack_require__(1);
+var _FeatureComparison = __webpack_require__(245);
 
-var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-
-var _classCallCheck2 = __webpack_require__(2);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(3);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-var _possibleConstructorReturn2 = __webpack_require__(4);
-
-var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-
-var _inherits2 = __webpack_require__(5);
-
-var _inherits3 = _interopRequireDefault(_inherits2);
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Feature = __webpack_require__(233);
-
-var _Feature2 = _interopRequireDefault(_Feature);
-
-var _triangle = __webpack_require__(30);
-
-var _triangle2 = _interopRequireDefault(_triangle);
+var _FeatureComparison2 = _interopRequireDefault(_FeatureComparison);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var FeatureComparison = function (_React$PureComponent) {
-    (0, _inherits3.default)(FeatureComparison, _React$PureComponent);
-
-    function FeatureComparison(props) {
-        (0, _classCallCheck3.default)(this, FeatureComparison);
-        return (0, _possibleConstructorReturn3.default)(this, (FeatureComparison.__proto__ || (0, _getPrototypeOf2.default)(FeatureComparison)).call(this, props));
-    }
-
-    (0, _createClass3.default)(FeatureComparison, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props,
-                title = _props.title,
-                features = _props.features;
-
-            return _react2.default.createElement(
-                'div',
-                { className: 'block' },
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'center' },
-                        _react2.default.createElement(
-                            'h2',
-                            null,
-                            title
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'container' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'pricing' },
-                        ' ',
-                        features.map(function (feature, index) {
-                            return _react2.default.createElement(
-                                'div',
-                                { key: feature.key },
-                                _react2.default.createElement(_Feature2.default, { feature: feature, promoted: index === 1 ? true : false }),
-                                _react2.default.createElement(_triangle2.default, null)
-                            );
-                        })
-                    )
-                )
-            );
-        }
-    }]);
-    return FeatureComparison;
-}(_react2.default.PureComponent);
-
-exports.default = FeatureComparison;
+/**
+ * The FeatureComparison component shows a list of packages, button like tags which
+ * identify tasks which that package naturally covers, highlights of the package and 
+ * the monthly or total price.
+ * 
+ * Feature Comparison uses the other classes in this component
+ */
+exports.default = _FeatureComparison2.default;
 
 /***/ }),
 /* 233 */
@@ -9343,6 +9090,1038 @@ exports.default = Http404Page;
 /***/ (function(module, exports) {
 
 module.exports = {"phone":"07843 080 738","email":"jenita@virtualassure.co.uk","sitekey":"6LczmEIUAAAAALhJlGFrEw3DWGXVKESz-jCr45de","navigation":[{"key":"home","link":"/","alt":"Link to home page","linkText":"Home"},{"key":"contact","link":"/contact.html","alt":"Link to contact us page","linkText":"Contact"},{"key":"services","link":"/services.html","alt":"Link to services page","linkText":"Services"},{"key":"pricing","link":"/pricing.html","alt":"Link to Pricing page","linkText":"Pricing"},{"key":"about","link":"/about.html","alt":"Link to About Me page","linkText":"About Me"}]}
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(241);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(243)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../../../node_modules/css-loader/index.js!./navigation.css", function() {
+		var newContent = require("!!../../../../node_modules/css-loader/index.js!./navigation.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(242)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".navigation {\n    position: relative;\n    z-index: 99;\n  }\n  .navigation a {\n    color: black;\n  }\n  .navigation .secondary-nav {\n    font-size: 10px;\n    letter-spacing: 1pt;\n    text-align: right;\n    font-weight: bold;\n    padding-top: 5px;\n    padding-bottom: 5px;\n  }\n  .navigation .secondary-nav span {\n    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);\n    opacity: 0.5;\n    -moz-transition: 0.3s;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    margin-left: 15px;\n  }\n  .navigation .secondary-nav span:hover {\n    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);\n    opacity: 1;\n  }\n  .navigation .secondary-nav span i {\n    margin-right: 5px;\n  }\n  .navigation .nav-toggle {\n    display: none;\n    font-size: 29px;\n    position: absolute;\n    top: -10px;\n    bottom: 0px;\n    right: 0px;\n    height: 30px;\n    margin: auto;\n    z-index: 999;\n  }\n  .navigation .main-nav {\n    display: table;\n    width: 100%;\n    padding-top: 10px;\n    padding-bottom: 20px;\n    position: relative;\n  }\n  .navigation .main-nav .brand, .navigation .main-nav nav {\n    display: table-cell;\n    vertical-align: middle;\n  }\n  .navigation .main-nav ul {\n    list-style: none;\n    float: right;\n  }\n  .navigation .main-nav ul li {\n    float: left;\n  }\n  .navigation .main-nav ul li.active a {\n    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);\n    opacity: 1;\n  }\n  .navigation .main-nav ul li.active a:after {\n    visibility: visible;\n    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);\n    opacity: 1;\n  }\n  .navigation .main-nav ul li a {\n    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);\n    opacity: 0.6;\n    margin: 5px 15px;\n    text-transform: uppercase;\n    font-weight: bold;\n    font-size: 13px;\n    position: relative;\n  }\n  .navigation .main-nav ul li a:last-child {\n    margin-right: 0;\n  }\n  .navigation .main-nav ul li a:hover {\n    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);\n    opacity: 1;\n    color: black;\n  }\n  .navigation .main-nav ul li a:after {\n    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);\n    opacity: 0;\n    visibility: hidden;\n    content: \"\";\n    height: 3px;\n    background-color: #37b048;\n    position: absolute;\n    width: 100%;\n    bottom: -10px;\n    left: 0;\n  }\n  .navigation .main-nav .icon-shortcut {\n    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n    -moz-border-radius: 50%;\n    -webkit-border-radius: 50%;\n    border-radius: 50%;\n    bottom: -52px;\n    background-color: #37b048;\n    height: 65px;\n    width: 65px;\n    position: absolute;\n    right: 0;\n    color: #fff;\n    text-align: center;\n    line-height: 70px;\n  }\n  .navigation .main-nav .icon-shortcut:hover {\n    background-color: #319d40;\n  }\n  .navigation .main-nav .icon-shortcut:hover i {\n    -moz-transform: rotateZ(360deg) scale(0.8);\n    -ms-transform: rotateZ(360deg) scale(0.8);\n    -webkit-transform: rotateZ(360deg) scale(0.8);\n    transform: rotateZ(360deg) scale(0.8);\n  }\n  .navigation .main-nav .icon-shortcut i {\n    -moz-transition: 0.5s cubic-bezier(0.93, 0.01, 0.37, 1);\n    -webkit-transition: 0.5s cubic-bezier(0.93, 0.01, 0.37, 1);\n    transition: 0.5s cubic-bezier(0.93, 0.01, 0.37, 1);\n    display: inline-block;\n    font-size: 24px;\n  }\n  .subpage .navigation {\n    background-color: rgba(237, 234, 225, 0.3);\n  }\n\n  @media (min-width: 768px) and (max-width: 991px) {\n        .navigation .container {\n            max-width: 991px;\n        }   \n    }\n  \n  @media only screen and (max-width: 767px) {\n    .navigation .nav-toggle {\n        display: block;\n    }\n    .navigation .main-nav nav {\n        cursor: pointer;\n    }\n  .navigation .main-nav nav.show-nav ul {\n    pointer-events: auto;\n    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);\n    opacity: 1;\n    visibility: visible;\n  }\n  .navigation .main-nav nav ul {\n    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);\n    opacity: 0;\n    -moz-transition: 0.3s;\n    -webkit-transition: 0.3s;\n    transition: 0.3s;\n    pointer-events: none;\n    background-color: #383838;\n    float: none;\n    display: inline-block;\n    position: absolute;\n    right: 5px;\n    margin-top: 30px;\n    text-align: right;\n    padding-left: 0;\n  }\n  .navigation .main-nav nav ul:after {\n    border-style: solid;\n    border-width: 0 0 10px 10px;\n    border-color: transparent transparent #383838 transparent;\n    content: \"\";\n    position: absolute;\n    top: -10px;\n    right: 0;\n  }\n  .navigation .main-nav nav ul li {\n    display: block;\n    float: none;\n  }\n  .navigation .main-nav nav ul li.active a:after { display: none; }\n  .navigation .main-nav nav ul li a {\n    display: block;\n    color: #fff;\n    padding: 5px 10px;\n  }\n  .navigation .main-nav nav ul li a:hover { color: #fff; }\n}", ""]);
+
+// exports
+
+
+/***/ }),
+/* 242 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+
+var stylesInDom = {};
+
+var	memoize = function (fn) {
+	var memo;
+
+	return function () {
+		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+		return memo;
+	};
+};
+
+var isOldIE = memoize(function () {
+	// Test for IE <= 9 as proposed by Browserhacks
+	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+	// Tests for existence of standard globals is to allow style-loader
+	// to operate correctly into non-standard environments
+	// @see https://github.com/webpack-contrib/style-loader/issues/177
+	return window && document && document.all && !window.atob;
+});
+
+var getTarget = function (target) {
+  return document.querySelector(target);
+};
+
+var getElement = (function (fn) {
+	var memo = {};
+
+	return function(target) {
+                // If passing function in options, then use it for resolve "head" element.
+                // Useful for Shadow Root style i.e
+                // {
+                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
+                // }
+                if (typeof target === 'function') {
+                        return target();
+                }
+                if (typeof memo[target] === "undefined") {
+			var styleTarget = getTarget.call(this, target);
+			// Special case to return head of iframe instead of iframe itself
+			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+				try {
+					// This will throw an exception if access to iframe is blocked
+					// due to cross-origin restrictions
+					styleTarget = styleTarget.contentDocument.head;
+				} catch(e) {
+					styleTarget = null;
+				}
+			}
+			memo[target] = styleTarget;
+		}
+		return memo[target]
+	};
+})();
+
+var singleton = null;
+var	singletonCounter = 0;
+var	stylesInsertedAtTop = [];
+
+var	fixUrls = __webpack_require__(244);
+
+module.exports = function(list, options) {
+	if (typeof DEBUG !== "undefined" && DEBUG) {
+		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+	}
+
+	options = options || {};
+
+	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
+
+	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+	// tags it will allow on a page
+	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
+
+	// By default, add <style> tags to the <head> element
+        if (!options.insertInto) options.insertInto = "head";
+
+	// By default, add <style> tags to the bottom of the target
+	if (!options.insertAt) options.insertAt = "bottom";
+
+	var styles = listToStyles(list, options);
+
+	addStylesToDom(styles, options);
+
+	return function update (newList) {
+		var mayRemove = [];
+
+		for (var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+
+			domStyle.refs--;
+			mayRemove.push(domStyle);
+		}
+
+		if(newList) {
+			var newStyles = listToStyles(newList, options);
+			addStylesToDom(newStyles, options);
+		}
+
+		for (var i = 0; i < mayRemove.length; i++) {
+			var domStyle = mayRemove[i];
+
+			if(domStyle.refs === 0) {
+				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
+
+				delete stylesInDom[domStyle.id];
+			}
+		}
+	};
+};
+
+function addStylesToDom (styles, options) {
+	for (var i = 0; i < styles.length; i++) {
+		var item = styles[i];
+		var domStyle = stylesInDom[item.id];
+
+		if(domStyle) {
+			domStyle.refs++;
+
+			for(var j = 0; j < domStyle.parts.length; j++) {
+				domStyle.parts[j](item.parts[j]);
+			}
+
+			for(; j < item.parts.length; j++) {
+				domStyle.parts.push(addStyle(item.parts[j], options));
+			}
+		} else {
+			var parts = [];
+
+			for(var j = 0; j < item.parts.length; j++) {
+				parts.push(addStyle(item.parts[j], options));
+			}
+
+			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+		}
+	}
+}
+
+function listToStyles (list, options) {
+	var styles = [];
+	var newStyles = {};
+
+	for (var i = 0; i < list.length; i++) {
+		var item = list[i];
+		var id = options.base ? item[0] + options.base : item[0];
+		var css = item[1];
+		var media = item[2];
+		var sourceMap = item[3];
+		var part = {css: css, media: media, sourceMap: sourceMap};
+
+		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
+		else newStyles[id].parts.push(part);
+	}
+
+	return styles;
+}
+
+function insertStyleElement (options, style) {
+	var target = getElement(options.insertInto)
+
+	if (!target) {
+		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
+	}
+
+	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
+
+	if (options.insertAt === "top") {
+		if (!lastStyleElementInsertedAtTop) {
+			target.insertBefore(style, target.firstChild);
+		} else if (lastStyleElementInsertedAtTop.nextSibling) {
+			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
+		} else {
+			target.appendChild(style);
+		}
+		stylesInsertedAtTop.push(style);
+	} else if (options.insertAt === "bottom") {
+		target.appendChild(style);
+	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
+		var nextSibling = getElement(options.insertInto + " " + options.insertAt.before);
+		target.insertBefore(style, nextSibling);
+	} else {
+		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
+	}
+}
+
+function removeStyleElement (style) {
+	if (style.parentNode === null) return false;
+	style.parentNode.removeChild(style);
+
+	var idx = stylesInsertedAtTop.indexOf(style);
+	if(idx >= 0) {
+		stylesInsertedAtTop.splice(idx, 1);
+	}
+}
+
+function createStyleElement (options) {
+	var style = document.createElement("style");
+
+	options.attrs.type = "text/css";
+
+	addAttrs(style, options.attrs);
+	insertStyleElement(options, style);
+
+	return style;
+}
+
+function createLinkElement (options) {
+	var link = document.createElement("link");
+
+	options.attrs.type = "text/css";
+	options.attrs.rel = "stylesheet";
+
+	addAttrs(link, options.attrs);
+	insertStyleElement(options, link);
+
+	return link;
+}
+
+function addAttrs (el, attrs) {
+	Object.keys(attrs).forEach(function (key) {
+		el.setAttribute(key, attrs[key]);
+	});
+}
+
+function addStyle (obj, options) {
+	var style, update, remove, result;
+
+	// If a transform function was defined, run it on the css
+	if (options.transform && obj.css) {
+	    result = options.transform(obj.css);
+
+	    if (result) {
+	    	// If transform returns a value, use that instead of the original css.
+	    	// This allows running runtime transformations on the css.
+	    	obj.css = result;
+	    } else {
+	    	// If the transform function returns a falsy value, don't add this css.
+	    	// This allows conditional loading of css
+	    	return function() {
+	    		// noop
+	    	};
+	    }
+	}
+
+	if (options.singleton) {
+		var styleIndex = singletonCounter++;
+
+		style = singleton || (singleton = createStyleElement(options));
+
+		update = applyToSingletonTag.bind(null, style, styleIndex, false);
+		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+
+	} else if (
+		obj.sourceMap &&
+		typeof URL === "function" &&
+		typeof URL.createObjectURL === "function" &&
+		typeof URL.revokeObjectURL === "function" &&
+		typeof Blob === "function" &&
+		typeof btoa === "function"
+	) {
+		style = createLinkElement(options);
+		update = updateLink.bind(null, style, options);
+		remove = function () {
+			removeStyleElement(style);
+
+			if(style.href) URL.revokeObjectURL(style.href);
+		};
+	} else {
+		style = createStyleElement(options);
+		update = applyToTag.bind(null, style);
+		remove = function () {
+			removeStyleElement(style);
+		};
+	}
+
+	update(obj);
+
+	return function updateStyle (newObj) {
+		if (newObj) {
+			if (
+				newObj.css === obj.css &&
+				newObj.media === obj.media &&
+				newObj.sourceMap === obj.sourceMap
+			) {
+				return;
+			}
+
+			update(obj = newObj);
+		} else {
+			remove();
+		}
+	};
+}
+
+var replaceText = (function () {
+	var textStore = [];
+
+	return function (index, replacement) {
+		textStore[index] = replacement;
+
+		return textStore.filter(Boolean).join('\n');
+	};
+})();
+
+function applyToSingletonTag (style, index, remove, obj) {
+	var css = remove ? "" : obj.css;
+
+	if (style.styleSheet) {
+		style.styleSheet.cssText = replaceText(index, css);
+	} else {
+		var cssNode = document.createTextNode(css);
+		var childNodes = style.childNodes;
+
+		if (childNodes[index]) style.removeChild(childNodes[index]);
+
+		if (childNodes.length) {
+			style.insertBefore(cssNode, childNodes[index]);
+		} else {
+			style.appendChild(cssNode);
+		}
+	}
+}
+
+function applyToTag (style, obj) {
+	var css = obj.css;
+	var media = obj.media;
+
+	if(media) {
+		style.setAttribute("media", media)
+	}
+
+	if(style.styleSheet) {
+		style.styleSheet.cssText = css;
+	} else {
+		while(style.firstChild) {
+			style.removeChild(style.firstChild);
+		}
+
+		style.appendChild(document.createTextNode(css));
+	}
+}
+
+function updateLink (link, options, obj) {
+	var css = obj.css;
+	var sourceMap = obj.sourceMap;
+
+	/*
+		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
+		and there is no publicPath defined then lets turn convertToAbsoluteUrls
+		on by default.  Otherwise default to the convertToAbsoluteUrls option
+		directly
+	*/
+	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
+
+	if (options.convertToAbsoluteUrls || autoFixUrls) {
+		css = fixUrls(css);
+	}
+
+	if (sourceMap) {
+		// http://stackoverflow.com/a/26603875
+		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+	}
+
+	var blob = new Blob([css], { type: "text/css" });
+
+	var oldSrc = link.href;
+
+	link.href = URL.createObjectURL(blob);
+
+	if(oldSrc) URL.revokeObjectURL(oldSrc);
+}
+
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports) {
+
+
+/**
+ * When source maps are enabled, `style-loader` uses a link element with a data-uri to
+ * embed the css on the page. This breaks all relative urls because now they are relative to a
+ * bundle instead of the current page.
+ *
+ * One solution is to only use full urls, but that may be impossible.
+ *
+ * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
+ *
+ * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
+ *
+ */
+
+module.exports = function (css) {
+  // get current location
+  var location = typeof window !== "undefined" && window.location;
+
+  if (!location) {
+    throw new Error("fixUrls requires window.location");
+  }
+
+	// blank or null?
+	if (!css || typeof css !== "string") {
+	  return css;
+  }
+
+  var baseUrl = location.protocol + "//" + location.host;
+  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
+
+	// convert each url(...)
+	/*
+	This regular expression is just a way to recursively match brackets within
+	a string.
+
+	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
+	   (  = Start a capturing group
+	     (?:  = Start a non-capturing group
+	         [^)(]  = Match anything that isn't a parentheses
+	         |  = OR
+	         \(  = Match a start parentheses
+	             (?:  = Start another non-capturing groups
+	                 [^)(]+  = Match anything that isn't a parentheses
+	                 |  = OR
+	                 \(  = Match a start parentheses
+	                     [^)(]*  = Match anything that isn't a parentheses
+	                 \)  = Match a end parentheses
+	             )  = End Group
+              *\) = Match anything and then a close parens
+          )  = Close non-capturing group
+          *  = Match anything
+       )  = Close capturing group
+	 \)  = Match a close parens
+
+	 /gi  = Get all matches, not the first.  Be case insensitive.
+	 */
+	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
+		// strip quotes (if they exist)
+		var unquotedOrigUrl = origUrl
+			.trim()
+			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
+			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
+
+		// already a full url? no change
+		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/)/i.test(unquotedOrigUrl)) {
+		  return fullMatch;
+		}
+
+		// convert the url to a full url
+		var newUrl;
+
+		if (unquotedOrigUrl.indexOf("//") === 0) {
+		  	//TODO: should we add protocol?
+			newUrl = unquotedOrigUrl;
+		} else if (unquotedOrigUrl.indexOf("/") === 0) {
+			// path should be relative to the base url
+			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
+		} else {
+			// path should be relative to current directory
+			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
+		}
+
+		// send back the fixed url(...)
+		return "url(" + JSON.stringify(newUrl) + ")";
+	});
+
+	// send back the fixed css
+	return fixedCss;
+};
+
+
+/***/ }),
+/* 245 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _getPrototypeOf = __webpack_require__(1);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(2);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(3);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(4);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(5);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Feature = __webpack_require__(233);
+
+var _Feature2 = _interopRequireDefault(_Feature);
+
+var _triangle = __webpack_require__(30);
+
+var _triangle2 = _interopRequireDefault(_triangle);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FeatureComparison = function (_React$PureComponent) {
+    (0, _inherits3.default)(FeatureComparison, _React$PureComponent);
+
+    function FeatureComparison(props) {
+        (0, _classCallCheck3.default)(this, FeatureComparison);
+        return (0, _possibleConstructorReturn3.default)(this, (FeatureComparison.__proto__ || (0, _getPrototypeOf2.default)(FeatureComparison)).call(this, props));
+    }
+
+    (0, _createClass3.default)(FeatureComparison, [{
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                title = _props.title,
+                features = _props.features;
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'block' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'center' },
+                        _react2.default.createElement(
+                            'h2',
+                            null,
+                            title
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'pricing' },
+                        ' ',
+                        features.map(function (feature, index) {
+                            return _react2.default.createElement(
+                                'div',
+                                { key: feature.key },
+                                _react2.default.createElement(_Feature2.default, { feature: feature, promoted: index === 1 ? true : false }),
+                                _react2.default.createElement(_triangle2.default, null)
+                            );
+                        })
+                    )
+                )
+            );
+        }
+    }]);
+    return FeatureComparison;
+}(_react2.default.PureComponent);
+
+exports.default = FeatureComparison;
+
+/***/ }),
+/* 246 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _getPrototypeOf = __webpack_require__(1);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(2);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(3);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(4);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(5);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Testimonial = __webpack_require__(195);
+
+var _Testimonial2 = _interopRequireDefault(_Testimonial);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Testimonials = function (_React$PureComponent) {
+    (0, _inherits3.default)(Testimonials, _React$PureComponent);
+
+    function Testimonials(props) {
+        (0, _classCallCheck3.default)(this, Testimonials);
+
+        var _this = (0, _possibleConstructorReturn3.default)(this, (Testimonials.__proto__ || (0, _getPrototypeOf2.default)(Testimonials)).call(this, props));
+
+        _this.renderTestimonial = _this.renderTestimonial.bind(_this);
+        return _this;
+    }
+
+    (0, _createClass3.default)(Testimonials, [{
+        key: 'renderTestimonial',
+        value: function renderTestimonial(testimonial) {
+            return _react2.default.createElement(_Testimonial2.default, { key: testimonial.key, testimonial: testimonial });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var _props = this.props,
+                title = _props.title,
+                testimonials = _props.testimonials;
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'block', id: 'successful-stories' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'h2',
+                        null,
+                        title
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'row' },
+                        testimonials.map(function (testimonial) {
+                            return _this2.renderTestimonial(testimonial);
+                        })
+                    )
+                ),
+                _react2.default.createElement('div', { className: 'bg' })
+            );
+        }
+    }]);
+    return Testimonials;
+}(_react2.default.PureComponent);
+
+exports.default = Testimonials;
+
+/***/ }),
+/* 247 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _getPrototypeOf = __webpack_require__(1);
+
+var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+
+var _classCallCheck2 = __webpack_require__(2);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(3);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+var _possibleConstructorReturn2 = __webpack_require__(4);
+
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+
+var _inherits2 = __webpack_require__(5);
+
+var _inherits3 = _interopRequireDefault(_inherits2);
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Navigation = function (_React$PureComponent) {
+    (0, _inherits3.default)(Navigation, _React$PureComponent);
+
+    function Navigation(props) {
+        (0, _classCallCheck3.default)(this, Navigation);
+
+        var _this = (0, _possibleConstructorReturn3.default)(this, (Navigation.__proto__ || (0, _getPrototypeOf2.default)(Navigation)).call(this, props));
+
+        _this.toggleNavigation = _this.toggleNavigation.bind(_this);
+        return _this;
+    }
+
+    (0, _createClass3.default)(Navigation, [{
+        key: 'toggleNavigation',
+        value: function toggleNavigation(e) {
+            e.preventDefault();
+            var el = document.querySelector('#nav-toggle');
+            var classNames = el.className;
+            if (classNames.length === 0) {
+                el.className = 'show-nav';
+            } else {
+                el.className = '';
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _props = this.props,
+                active = _props.active,
+                config = _props.config;
+
+            return _react2.default.createElement(
+                'header',
+                { className: 'navigation', id: 'top' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'secondary-nav' },
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'mailto:' + config.email, target: '_blank' },
+                                _react2.default.createElement('i', { className: 'icon_mail' }),
+                                config.email
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'tel:' + config.phone },
+                                _react2.default.createElement('i', { className: 'icon_phone' }),
+                                config.phone
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'main-nav' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'brand' },
+                            _react2.default.createElement(
+                                'a',
+                                { href: 'index.html' },
+                                _react2.default.createElement('img', { src: 'assets/img/logo.png', alt: '' })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'nav',
+                            { id: 'nav-toggle' },
+                            _react2.default.createElement(
+                                'ul',
+                                null,
+                                config.navigation.map(function (menuitem) {
+                                    return _react2.default.createElement(
+                                        'li',
+                                        { key: menuitem.key, className: active === menuitem.key ? "active" : "" },
+                                        _react2.default.createElement(
+                                            'a',
+                                            { href: menuitem.link, alt: menuitem.alt },
+                                            menuitem.linkText
+                                        )
+                                    );
+                                })
+                            ),
+                            _react2.default.createElement(
+                                'div',
+                                { className: 'nav-toggle', onClick: this.toggleNavigation },
+                                _react2.default.createElement('i', { className: 'icon_menu' })
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'a',
+                            { href: 'contact.html', className: 'icon-shortcut' },
+                            _react2.default.createElement('i', { className: 'icon_calendar', title: 'Make an Appointment' })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+    return Navigation;
+}(_react2.default.PureComponent);
+
+exports.default = Navigation;
+
+/***/ }),
+/* 248 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(249);
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(243)(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../../../../node_modules/css-loader/index.js!./testimonial.css", function() {
+		var newContent = require("!!../../../../node_modules/css-loader/index.js!./testimonial.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(242)(false);
+// imports
+
+
+// module
+exports.push([module.i, ".story {\n    background: rgba(237, 234, 225, 0.3);\n    position: relative;\n    padding: 40px;\n    margin-bottom: 30px;\n  }\n  .story blockquote {\n    margin-left: 100px;\n  }\n  .story p {\n    font-size: 16px;\n  }\n  .story .image {\n    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);\n    -moz-border-radius: 50%;\n    -webkit-border-radius: 50%;\n    border-radius: 50%;\n    height: 155px;\n    width: 155px;\n    overflow: hidden;\n    position: absolute;\n    left: -20px;\n    top: 30px;\n  }\n  \n  @media only screen and (max-width: 767px) {\n    .story {\n        padding: 20px;\n        text-align: center;\n    }\n    .story .image {\n        position: relative;\n        left: inherit;\n        top: inherit;\n        display: inline-block;\n    }\n    .story blockquote {\n        margin-left: 0;\n    }\n  }", ""]);
+
+// exports
+
 
 /***/ })
 ],[126]);

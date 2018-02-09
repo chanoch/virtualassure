@@ -1,6 +1,10 @@
-Mobile optimise pricing page
-delete services.html
-check dist for cleanup
+subpage versus main styles
+react-event-preventdefault
+fix reload on navigation? 
+Add service detail
+
+add css to components
+
 change h2 header to a section type with row
 semver and ci/cd
 
@@ -10,17 +14,11 @@ Consolidate creation of routes, navigation, importing of pages
 Error on missing config in page
 propTypes
 error boundaries
-subpage versus main styles
-fix email link in chrome?
+fix email link in chrome
 README.md
-react-event-preventdefault?
 global data for layout
 data for components
-fix reload on navigation? 
-add css to components
 error boundaries
-
-move styles
 
 accessibility test
 security test
@@ -30,10 +28,8 @@ BLOG POSTS
 React organisation - using index versus import Blah/Blah
 Webpack configuration
 Express config - returning index.htm
+module exporting
 
-
-Update services to work for mobile
-Add service detail
 facebook engagement
 add logging of contact requests.
 Add echo of message? 
@@ -95,4 +91,8 @@ add data layer DONE
 fix express error handler pages DONE
 Pricing page DONE
 About Me - fix spacing in headings DONE
-Home page - fix spacing in slideshow
+Home page - fix spacing in slideshow DONE
+Mobile optimise pricing page DONE
+delete services.html DONE
+check dist for cleanup DONE
+Update services to work for mobile DONE
