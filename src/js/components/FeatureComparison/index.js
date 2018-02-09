@@ -22,8 +22,8 @@ export default class FeatureComparison extends React.PureComponent {
                     <div className="pricing"> {/* namespace class */}
                         {features.map((feature, index) => {
                             return (
-                                <div>
-                                    <Feature key={feature.key} feature={feature} />
+                                <div key={feature.key}>
+                                    <Feature feature={feature} promoted={index===1?true:false}/>
                                     <Triangle />
                                 </div>
                             );

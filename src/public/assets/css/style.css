@@ -383,9 +383,7 @@ img {
   border: 2px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
-.half-bottom-margin {
-  margin-bottom: 15px;
-}
+
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -487,8 +485,8 @@ img {
   margin-right: 5px;
 }
 .blog-post .meta .tags {
-  float: right;
   font-size: 12px;
+  margin: 20px 0px 20px;
 }
 .blog-post .meta .tags .tag {
   -moz-border-radius: 20px;
@@ -601,6 +599,13 @@ img {
   background-color: rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.4);
 }
+.feature {
+    background: rgba(237, 234, 225, 0.3);
+    padding: 40px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }  
+
 .feature-box     { margin-bottom: 40px; }
 .feature-box > i {
   color: #37b048;
@@ -844,6 +849,7 @@ img {
   right: 10px;
   line-height: 60px;
 }
+
 .showme {
   background-color: rgba(237, 234, 225, 0.7);
   padding-bottom: 15px;
@@ -1181,15 +1187,12 @@ textarea {
   right: 5px;
 }
 
-
-
 /* 7. Responsive */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .block           { padding: 40px 0px; }  
-  .subpage .page-wrapper h2:first-child {
-    margin-top: 40px;
-  }
-  
+    .block           { padding: 40px 0px; }  
+    .subpage .page-wrapper h2:first-child {
+        margin-top: 40px;
+    }  
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1208,10 +1211,16 @@ textarea {
     max-width: inherit;
     height: 100%; 
   }
-
+  .pricing .price-box .price {
+      font-size: 18px;
+  }
 }
 @media (max-width: 767px) {
-  a.white {
+    .pricing .price-box .price {
+        font-size: 18px;
+    }
+
+    a.white {
     border-bottom: 3px solid #fff;
     padding-bottom: 0px;
   }
@@ -1358,9 +1367,16 @@ textarea {
   #servicetypes { display: none; }
 
   #getintouchbutton { padding-bottom: 40px; }
+
+  .article {
+      display: block;
+  }
 }
 
 @media only screen and (max-width: 40em) { 
+  .pricing .price-box .price {
+      font-size: 18px;
+  }
     .brand img {
         height: 75%;
     }

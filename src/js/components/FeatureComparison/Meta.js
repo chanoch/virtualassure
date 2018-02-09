@@ -5,6 +5,7 @@ export default class Meta extends React.PureComponent {
         const {feature} = this.props;
         return (
             <figure className="meta">
+                <div>{feature.summary}</div>
                 <div className="tags">
                     {feature.tags.map((tag) => {
                         return (
@@ -12,7 +13,6 @@ export default class Meta extends React.PureComponent {
                         )
                     })}
                 </div>
-                <span>{feature.summary}</span>
             </figure>
         )
     }

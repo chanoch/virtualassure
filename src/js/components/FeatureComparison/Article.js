@@ -13,7 +13,7 @@ export default class Article extends React.PureComponent {
     render() {
         const {feature} = this.props;
         return (
-            <div className="offset-1 col-7">
+            <div className="col-12 col-sm-12 offset-md-1 col-md-7 article">
                 <section id="content">
                     <article className="blog-post">
                         <header><h2>{feature.title}</h2></header>

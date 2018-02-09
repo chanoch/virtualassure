@@ -45,7 +45,7 @@ export default class PricingPage extends React.PureComponent {
                         <div className="bg"></div>
                     </div>
                         
-                    <div className="block">
+                    <div className="block"> 
                         <div className="container">
                             <div className="center">
                                     <a href="contact.html" className="btn btn-primary btn-big">Contact Me</a>
