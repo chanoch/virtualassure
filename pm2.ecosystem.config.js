@@ -2,7 +2,7 @@ module.exports = {
     apps: [
         {
             name: "virtualassure",
-            script: "./index.js",
+            script: "./dist/server/index.js",
             watch: true,
             env: {
                 "NODE_ENV": "development",
