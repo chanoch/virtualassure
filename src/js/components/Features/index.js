@@ -50,7 +50,7 @@ export class Feature extends React.PureComponent {
                     <ul>
                         {details&&details.map((item) => (<li key={item.key}>{item.text}</li>))}
                     </ul>
-                    <a href={linkText}>{link} <i className="arrow_right"></i></a>
+                    <a href={link}>{linkText} <i className="arrow_right"></i></a>
                     </div>
                 </div>
                 
