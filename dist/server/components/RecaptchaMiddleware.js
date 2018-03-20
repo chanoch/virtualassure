@@ -1,5 +1,7 @@
 const https = require('https')
 
+const use_recaptcha = true;
+
 module.exports = class RecaptchaMiddleware{
     constructor(site_key, secret_key, options){
         this._api = {
@@ -10,10 +12,15 @@ module.exports = class RecaptchaMiddleware{
         this._site_key = site_key
         this._secret_key = secret_key
         this._options = options || {checkremoteip:false}
-        if (!this._site_key) throw new Error('site_key is required')
-        if (!this._secret_key) throw new Error('recaptcha_secret is required')
+        if (!this._site_key) {
+            console.warn("No site key - won't use recaptcha");
+        }
+        if (!this._secret_key) {
+            console.warn("No secret key - won't use recaptcha");
+        }
     }
     get middleware() {
+        if(use_recaptcha)
         return {
             verify: (req, res, next) => {
                 this.verify(req, (error, data) => {
@@ -21,6 +28,9 @@ module.exports = class RecaptchaMiddleware{
                     next()
                 })
             }
+        }
+        else {
+            return next();
         }
     }
     verify(req, cb){
@@ -62,7 +72,6 @@ module.exports = class RecaptchaMiddleware{
                 else {
                     console.log('Got error' + error);
                     cb(error, null);
-
                 }
             })
             res.on('error', (e) => { 
