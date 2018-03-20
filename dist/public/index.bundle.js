@@ -6873,6 +6873,8 @@ var Step = function (_React$PureComponent) {
         value: function render() {
             var step = this.props.step;
 
+            var text = step.text;
+
             return _react2.default.createElement(
                 "div",
                 { className: "step width-20" },
@@ -6900,7 +6902,15 @@ var Step = function (_React$PureComponent) {
                 _react2.default.createElement(
                     "p",
                     null,
-                    step.text
+                    !Array.isArray(step.text) && step.text,
+                    Array.isArray(step.text) && step.text.map(function (line) {
+                        return _react2.default.createElement(
+                            "span",
+                            null,
+                            line,
+                            _react2.default.createElement("br", null)
+                        );
+                    })
                 )
             );
         }
@@ -6926,7 +6936,7 @@ module.exports = {"title":"Success Stories","testimonials":[{"key":"mark","link"
 /* 209 */
 /***/ (function(module, exports) {
 
-module.exports = {"title":"Five steps to engagement","steps":[{"key":"1","title":"Contact Me","text":"We can discuss your requirements to check we are aligned.","classes":"bar height-20"},{"key":"2","title":"Make an appointment","text":"I will visit to discuss your requirements in more detail.","classes":"bar height-40"},{"key":"3","title":"I will analyse the work","text":"I will provide you with a summary of our discussion together with a time estimate and recommended package.","classes":"bar height-60"},{"key":"4","title":"Sign Up","text":"<p>- Access to systems<br />- Agree frequency of catchups<br />- Your preferred working style<br />- Agree start date.</p>","classes":"bar height-80"},{"key":"5","title":"Start of Engagement","text":"Regular reviews ensure we are working well together.","classes":"bar height-100"}]}
+module.exports = {"title":"Five steps to engagement","steps":[{"key":"1","title":"Contact Me","text":"We can discuss your requirements to check we are aligned.","classes":"bar height-20"},{"key":"2","title":"Make an appointment","text":"I will visit to discuss your requirements in more detail.","classes":"bar height-40"},{"key":"3","title":"I will analyse the work","text":"I will provide you with a summary of our discussion together with a time estimate and recommended package.","classes":"bar height-60"},{"key":"4","title":"Sign Up","text":["Access to systems"," - Agree frequency of catchups"," - Your preferred working style"," - Agree start date."],"classes":"bar height-80"},{"key":"5","title":"Start of Engagement","text":"Regular reviews ensure we are working well together.","classes":"bar height-100"}]}
 
 /***/ }),
 /* 210 */

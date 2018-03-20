@@ -18,7 +18,7 @@
     }, {
         "key": "4",
         "title": "Sign Up",
-        "text": "<p>- Access to systems<br />- Agree frequency of catchups<br />- Your preferred working style<br />- Agree start date.</p>",
+        "text": ["Access to systems"," - Agree frequency of catchups"," - Your preferred working style"," - Agree start date."],
         "classes": "bar height-80"
     },{
         "key": "5",

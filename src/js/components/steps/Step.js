@@ -19,6 +19,8 @@ export default class Step extends React.PureComponent {
     }
     render() {
         const {step} = this.props;
+        const text = step.text;
+
         return (
             <div className="step width-20">
                 <figure>
@@ -29,7 +31,10 @@ export default class Step extends React.PureComponent {
                 </figure>
                 <h3>{step.title}</h3>
                 <hr />
-                <p>{step.text}</p>
+                <p>
+                {!Array.isArray(step.text)&&step.text}
+                {Array.isArray(step.text)&&step.text.map((line) => (<span>{line}<br/></span>))}
+                </p>
             </div>                
         )
     }
